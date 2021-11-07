@@ -1,0 +1,338 @@
+SciDAVis 2.3.0 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+30139
+<table creation_time="2021-03-03 13:54:55:018" caption_spec="%n%C{ - }%c" name="Table1" columns="28" rows="30"><comment><![CDATA[]]></comment><column creation_time="2021-03-03 13:54:55:018" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 13:54:55:018" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 13:54:55:018" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-03-03 13:54:55:020" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 13:54:55:020" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 13:54:55:021" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">4.7000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">9.6000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.4600000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">1.9600000000000000e+02</row></column><column creation_time="2021-03-03 13:59:52:175" caption_spec="%n%C{ - }%c" name="4" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 13:59:52:175" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 13:59:52:176" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-03-03 13:59:49:202" caption_spec="%n%C{ - }%c" name="3" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 13:59:49:202" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 13:59:49:203" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">5.8000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.1700000000000000e+02</row><row type="TypeDouble" index="3" invalid="no">1.8100000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">2.4000000000000000e+02</row></column><column creation_time="2021-03-03 14:24:17:209" caption_spec="%n%C{ - }%c" name="5" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 14:24:17:209" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 14:24:17:209" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-03-03 14:24:18:925" caption_spec="%n%C{ - }%c" name="6" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 14:24:18:925" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 14:24:18:925" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">5.2000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.0500000000000000e+02</row><row type="TypeDouble" index="3" invalid="no">1.5700000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">2.0800000000000000e+02</row></column><column creation_time="2021-03-03 14:30:11:398" caption_spec="%n%C{ - }%c" name="7" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 14:30:11:398" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 14:30:11:399" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-03-03 14:30:13:611" caption_spec="%n%C{ - }%c" name="8" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 14:30:13:611" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 14:30:13:611" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">6.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">5.1000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">9.6000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.4000000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">1.8500000000000000e+02</row></column><column creation_time="2021-03-03 22:57:18:335" caption_spec="%n%C{ - }%c" name="9" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 22:57:18:335" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 22:57:18:335" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-03-03 22:57:21:142" caption_spec="%n%C{ - }%c" name="10" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 22:57:21:143" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 22:57:21:143" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">4.8000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">9.9000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.4800000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">1.9800000000000000e+02</row></column><column creation_time="2021-03-03 23:01:56:806" caption_spec="%n%C{ - }%c" name="11" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 23:01:56:806" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 23:01:56:806" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-03-03 23:01:59:785" caption_spec="%n%C{ - }%c" name="12" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 23:01:59:785" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 23:01:59:785" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">8.1000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.2000000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">1.6000000000000000e+02</row></column><column creation_time="2021-03-03 23:06:49:644" caption_spec="%n%C{ - }%c" name="13" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 23:06:49:644" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 23:06:49:644" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-03-03 23:06:51:695" caption_spec="%n%C{ - }%c" name="14" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 23:06:51:695" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 23:06:51:695" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">3.4000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">6.9000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.0100000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">1.3500000000000000e+02</row></column><column creation_time="2021-03-03 23:10:32:619" caption_spec="%n%C{ - }%c" name="15" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 23:10:32:619" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 23:10:32:619" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-03-03 23:10:34:487" caption_spec="%n%C{ - }%c" name="16" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-03-03 23:10:34:487" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-03-03 23:10:34:487" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">8.1000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.2000000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">1.6000000000000000e+02</row></column><column creation_time="2021-04-03 00:27:22:830" caption_spec="%n%C{ - }%c" name="17" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 00:27:22:830" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 00:27:22:831" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">6.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">7.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">8.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">9.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="5" invalid="no">1.2000000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">1.4000000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">1.5000000000000000e+01</row></column><column creation_time="2021-04-03 00:27:28:059" caption_spec="%n%C{ - }%c" name="18" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 00:33:56:122" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 00:33:56:122" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0710000000000000e+03</row><row type="TypeDouble" index="1" invalid="no">1.2800000000000000e+03</row><row type="TypeDouble" index="2" invalid="no">1.5010000000000000e+03</row><row type="TypeDouble" index="3" invalid="no">1.7130000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">1.9220000000000000e+03</row><row type="TypeDouble" index="5" invalid="no">2.3120000000000000e+03</row><row type="TypeDouble" index="6" invalid="no">2.5980000000000000e+03</row><row type="TypeDouble" index="7" invalid="no">2.8050000000000000e+03</row></column><column creation_time="2021-04-03 00:36:22:901" caption_spec="%n%C{ - }%c" name="19" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 00:36:22:901" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 00:36:22:901" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">7.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">8.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">9.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="5" invalid="no">1.2000000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">1.3000000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e+00</row></column><column creation_time="2021-04-03 00:36:24:671" caption_spec="%n%C{ - }%c" name="20" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 00:37:04:148" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 00:37:04:149" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0030000000000000e+03</row><row type="TypeDouble" index="1" invalid="no">1.3220000000000000e+03</row><row type="TypeDouble" index="2" invalid="no">1.5000000000000000e+03</row><row type="TypeDouble" index="3" invalid="no">1.6700000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">1.8030000000000000e+03</row><row type="TypeDouble" index="5" invalid="no">2.3500000000000000e+03</row><row type="TypeDouble" index="6" invalid="no">2.5050000000000000e+03</row><row type="TypeDouble" index="7" invalid="no">3.1580000000000000e+03</row></column><column creation_time="2021-04-03 01:34:04:424" caption_spec="%n%C{ - }%c" name="21" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 01:34:04:424" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 01:34:04:424" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-04-03 01:34:06:476" caption_spec="%n%C{ - }%c" name="22" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 01:34:52:089" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 01:34:52:089" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.5600000000000000e+02</row><row type="TypeDouble" index="1" invalid="no">5.0200000000000000e+02</row><row type="TypeDouble" index="2" invalid="no">7.5200000000000000e+02</row><row type="TypeDouble" index="3" invalid="no">1.0050000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">1.2460000000000000e+03</row></column><column creation_time="2021-04-03 01:37:16:130" caption_spec="%n%C{ - }%c" name="23" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 01:37:16:130" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 01:37:16:130" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-04-03 01:37:18:345" caption_spec="%n%C{ - }%c" name="24" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 01:37:18:345" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 01:37:18:346" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.6700000000000000e+02</row><row type="TypeDouble" index="1" invalid="no">5.1400000000000000e+02</row><row type="TypeDouble" index="2" invalid="no">7.6800000000000000e+02</row><row type="TypeDouble" index="3" invalid="no">1.0240000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">1.2800000000000000e+03</row></column><column creation_time="2021-04-03 01:40:03:678" caption_spec="%n%C{ - }%c" name="25" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 01:40:03:678" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 01:40:03:678" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-04-03 01:40:05:713" caption_spec="%n%C{ - }%c" name="26" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 02:07:45:665" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 02:07:45:665" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.7000000000000000e+02</row><row type="TypeDouble" index="1" invalid="no">5.2000000000000000e+02</row><row type="TypeDouble" index="2" invalid="no">7.7300000000000000e+02</row><row type="TypeDouble" index="3" invalid="no">1.0340000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">1.2830000000000000e+03</row></column><column creation_time="2021-04-03 02:12:03:527" caption_spec="%n%C{ - }%c" name="27" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 02:12:03:527" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 02:12:03:527" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2021-04-03 02:12:05:358" caption_spec="%n%C{ - }%c" name="28" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-04-03 02:13:33:750" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-04-03 02:13:33:750" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.7500000000000000e+02</row><row type="TypeDouble" index="1" invalid="no">5.2400000000000000e+02</row><row type="TypeDouble" index="2" invalid="no">7.8000000000000000e+02</row><row type="TypeDouble" index="3" invalid="no">1.0270000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">1.3010000000000000e+03</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width><column_width column="5">120</column_width><column_width column="6">120</column_width><column_width column="7">120</column_width><column_width column="8">120</column_width><column_width column="9">120</column_width><column_width column="10">120</column_width><column_width column="11">120</column_width><column_width column="12">120</column_width><column_width column="13">120</column_width><column_width column="14">120</column_width><column_width column="15">120</column_width><column_width column="16">120</column_width><column_width column="17">120</column_width><column_width column="18">120</column_width><column_width column="19">120</column_width><column_width column="20">120</column_width><column_width column="21">120</column_width><column_width column="22">120</column_width><column_width column="23">120</column_width><column_width column="24">120</column_width><column_width column="25">120</column_width><column_width column="26">120</column_width><column_width column="27">120</column_width></table>
+geometry	2	1	994	607	
+
+</table>
+<multiLayer>
+График1	1	1	04.03.2021 0:39
+geometry	996	0	500	400	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	423	275
+Alignement	0	0
+<graph>
+ggeometry	5	5	479	334
+PlotTitle	Зависимость частоты резонанса от его номера для воздуха	#ff000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffffff	255
+Margin	0
+Border	0	#ff000000
+grid	0	0	0	0	#ff0000ff	0	0	#ffa0a0a4	2	0	#ff0000ff	0	0	#ffa0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	k	f, Гц			
+AxesTitleColors	#ff000000	#ff000000	#ff000000	#ff000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	MS Shell Dlg 2	6	50	0	0	0
+ScaleFont0	MS Shell Dlg 2	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	8	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	8	75	0	0	0
+AxisFont0	MS Shell Dlg 2	8	50	0	0	0
+AxisFont1	MS Shell Dlg 2	8	50	0	0	0
+AxisFont2	MS Shell Dlg 2	8	50	0	0	0
+AxisFont3	MS Shell Dlg 2	8	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesNumberColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffffff	255
+curve	Table1_27	Table1_28	1	0	#ff000000	0	1	3	1	#ff000000	#ff000000	0	#ff000000	14	1	0	64		2	0	0	29	1
+FunctionCurve	0,LinearПриближение1,x,1,5	2			0	1	#ffff0000	0	1	0	0	#ff000000	#ffa0a0a4	0	#ff000000	14	1	16	64		2	0	324341352	11904	1
+<formula>
+B=14.9
+A=255.5
+
+A*x+B
+</formula>
+scale	0	200	1400	0	8	5	0	0
+scale	1	200	1400	0	8	5	0	0
+scale	2	0	6	0	8	5	0	0
+scale	3	0	6	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	0.142857142857143	1356.8345323741	MS Shell Dlg 2	8	50	0	0	0	#ff000000	1	0	#00ffffff	0	\c{2}y = 255,5x + 14,9</legend>
+</graph>
+</multiLayer>
+<log>
+[03.03.2021 13:59	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_2, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 3 до значения по x = 196
+B (y-intercept) = 0,988885678840304 +/- 0,0354808910822428
+A (slope) = 0,0206056795200789 +/- 0,000297401560083612
+--------------------------------------------------------------------------------------
+Chi^2 = 0,00624543276175586
+R^2 = 0,999375456723824
+---------------------------------------------------------------------------------------
+[03.03.2021 14:02	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_2, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -47,9 +/- 2,32163735324878
+A (slope) = 48,5 +/- 0,7
+--------------------------------------------------------------------------------------
+Chi^2 = 14,7
+R^2 = 0,999375456723824
+---------------------------------------------------------------------------------------
+[03.03.2021 14:18	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_3, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -61,7 +/- 1,90525588832577
+A (slope) = 60,3 +/- 0,574456264653803
+--------------------------------------------------------------------------------------
+Chi^2 = 9,9
+R^2 = 0,999727803622686
+---------------------------------------------------------------------------------------
+[03.03.2021 14:26	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_6, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -47,9 +/- 1,82665450117603
+A (slope) = 51,1 +/- 0,55075705472861
+--------------------------------------------------------------------------------------
+Chi^2 = 9,1
+R^2 = 0,999651623968271
+---------------------------------------------------------------------------------------
+[03.03.2021 14:30	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_8, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -38,5 +/- 0,33166247903554
+A (slope) = 44,7 +/- 0,1
+--------------------------------------------------------------------------------------
+Chi^2 = 0,3
+R^2 = 0,999984985886734
+---------------------------------------------------------------------------------------
+[03.03.2021 22:58	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_10, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -46,2 +/- 2,54034118443435
+A (slope) = 48,6 +/- 0,765941686205071
+--------------------------------------------------------------------------------------
+Chi^2 = 17,6
+R^2 = 0,999255410962381
+---------------------------------------------------------------------------------------
+[03.03.2021 23:02	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_12, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -39,8 +/- 0,541602560309064
+A (slope) = 40 +/- 0,163299316185545
+--------------------------------------------------------------------------------------
+Chi^2 = 0,8
+R^2 = 0,999950002499875
+---------------------------------------------------------------------------------------
+[03.03.2021 23:07	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_14, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -33,3 +/- 0,834665601703261
+A (slope) = 33,7 +/- 0,251661147842358
+--------------------------------------------------------------------------------------
+Chi^2 = 1,9
+R^2 = 0,999832728809381
+---------------------------------------------------------------------------------------
+[03.03.2021 23:15	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_16, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -39,8 +/- 0,541602560309064
+A (slope) = 40 +/- 0,163299316185545
+--------------------------------------------------------------------------------------
+Chi^2 = 0,8
+R^2 = 0,999950002499875
+---------------------------------------------------------------------------------------
+[03.03.2021 23:34	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_2, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -47,9 +/- 2,32163735324878
+A (slope) = 48,5 +/- 0,7
+--------------------------------------------------------------------------------------
+Chi^2 = 14,7
+R^2 = 0,999375456723824
+---------------------------------------------------------------------------------------
+[03.03.2021 23:37	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_3, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -61,7 +/- 1,90525588832577
+A (slope) = 60,3 +/- 0,574456264653803
+--------------------------------------------------------------------------------------
+Chi^2 = 9,9
+R^2 = 0,999727803622686
+---------------------------------------------------------------------------------------
+[03.03.2021 23:39	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_6, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -47,9 +/- 1,82665450117603
+A (slope) = 51,1 +/- 0,55075705472861
+--------------------------------------------------------------------------------------
+Chi^2 = 9,1
+R^2 = 0,999651623968271
+---------------------------------------------------------------------------------------
+[03.03.2021 23:40	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_8, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = -38,5 +/- 0,33166247903554
+A (slope) = 44,7 +/- 0,1
+--------------------------------------------------------------------------------------
+Chi^2 = 0,3
+R^2 = 0,999984985886734
+---------------------------------------------------------------------------------------
+[04.03.2021 0:29	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_18, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 6 до значения по x = 15
+B (y-intercept) = -3,00500834724541 +/- 0,463163066771662
+A (slope) = 0,741235392320534 +/- 0,0437892388935025
+--------------------------------------------------------------------------------------
+Chi^2 = 0,861435726210351
+R^2 = 0,97948962556642
+---------------------------------------------------------------------------------------
+[04.03.2021 0:34	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_18, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 6 до значения по x = 15
+B (y-intercept) = -33,7095158597663 +/- 51,168628700542
+A (slope) = 191,008347245409 +/- 4,83768129794682
+--------------------------------------------------------------------------------------
+Chi^2 = 10 513,8697829716
+R^2 = 0,996165994096866
+---------------------------------------------------------------------------------------
+[04.03.2021 0:37	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_20, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 5 до значения по x = 17
+B (y-intercept) = 31,2899628252788 +/- 66,348541077231
+A (slope) = 185,934324659232 +/- 6,18367357799841
+--------------------------------------------------------------------------------------
+Chi^2 = 23 143,4399008674
+R^2 = 0,993407462040878
+---------------------------------------------------------------------------------------
+[04.03.2021 0:38	Plot: ''График2'']
+Линейная регрессия приближение по набору данных: Table1_18, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 6 до значения по x = 15
+B (y-intercept) = -33,7095158597663 +/- 51,168628700542
+A (slope) = 191,008347245409 +/- 4,83768129794682
+--------------------------------------------------------------------------------------
+Chi^2 = 10 513,8697829716
+R^2 = 0,996165994096866
+---------------------------------------------------------------------------------------
+[04.03.2021 0:39	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_18, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 6 до значения по x = 15
+B (y-intercept) = -33,7095158597663 +/- 51,168628700542
+A (slope) = 191,008347245409 +/- 4,83768129794682
+--------------------------------------------------------------------------------------
+Chi^2 = 10 513,8697829716
+R^2 = 0,996165994096866
+---------------------------------------------------------------------------------------
+[04.03.2021 0:52	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_20, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 5 до значения по x = 17
+B (y-intercept) = 31,2899628252788 +/- 66,348541077231
+A (slope) = 185,934324659232 +/- 6,18367357799841
+--------------------------------------------------------------------------------------
+Chi^2 = 23 143,4399008674
+R^2 = 0,993407462040878
+---------------------------------------------------------------------------------------
+[04.03.2021 1:35	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_22, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 6 до значения по x = 16
+B (y-intercept) = -8,51182197496523 +/- 53,0834614790202
+A (slope) = 190,458970792768 +/- 4,8687107033041
+--------------------------------------------------------------------------------------
+Chi^2 = 12 782,5674547983
+R^2 = 0,996094497997901
+---------------------------------------------------------------------------------------
+[04.03.2021 1:38	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_24, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 6 до значения по x = 17
+B (y-intercept) = 36,0628140703518 +/- 71,2851222013148
+A (slope) = 184,29648241206 +/- 6,30077416328267
+--------------------------------------------------------------------------------------
+Chi^2 = 23 700,7537688442
+R^2 = 0,993035821399816
+---------------------------------------------------------------------------------------
+[04.03.2021 1:38	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_24, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 5 до значения по x = 16
+B (y-intercept) = 220,359296482412 +/- 65,3278169587369
+A (slope) = 184,29648241206 +/- 6,30077416328267
+--------------------------------------------------------------------------------------
+Chi^2 = 23 700,7537688442
+R^2 = 0,993035821399816
+---------------------------------------------------------------------------------------
+[04.03.2021 1:40	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_26, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 6 до значения по x = 17
+B (y-intercept) = 104,305263157895 +/- 67,0465947873281
+A (slope) = 179,638596491228 +/- 5,84396401949632
+--------------------------------------------------------------------------------------
+Chi^2 = 21 899,9157894737
+R^2 = 0,993690165010534
+---------------------------------------------------------------------------------------
+[04.03.2021 1:51	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_22, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = 7,3 +/- 3,42003898613257
+A (slope) = 248,3 +/- 1,0311805532172
+--------------------------------------------------------------------------------------
+Chi^2 = 31,9
+R^2 = 0,999948261388009
+---------------------------------------------------------------------------------------
+[04.03.2021 2:05	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_24, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = 9,8 +/- 3,50998575495685
+A (slope) = 253,6 +/- 1,05830052442584
+--------------------------------------------------------------------------------------
+Chi^2 = 33,6
+R^2 = 0,999947758205071
+---------------------------------------------------------------------------------------
+[04.03.2021 2:08	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_26, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = 14 +/- 3,53081671383076
+A (slope) = 254 +/- 1,06458129484475
+--------------------------------------------------------------------------------------
+Chi^2 = 34
+R^2 = 0,999947302671755
+---------------------------------------------------------------------------------------
+[04.03.2021 2:13	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_28, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 1 до значения по x = 5
+B (y-intercept) = 14,9 +/- 8,53561167501584
+A (slope) = 255,5 +/- 2,57358375292768
+--------------------------------------------------------------------------------------
+Chi^2 = 198,7
+R^2 = 0,99969571265719
+---------------------------------------------------------------------------------------
+</log>

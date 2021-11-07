@@ -1,0 +1,134 @@
+********************************************************************************
+***                            Micro-Cap 10.2.0.0                            ***
+***                                                                          ***
+***                                                                          ***
+***                       Transient Analysis of TLine                        ***
+********************************************************************************
+Limits
+======
+Time Range           200n
+Maximum Time Step    0.05n
+Number of Points     51
+Temperature          Linear 27
+Retrace Runs         1
+Run Options          Normal
+State Variables      Zero
+Operating Point      On
+Operating Point Only Off
+
+Stepping Options
+================
+Stepping is Nested
+
+Step What  RL value
+From       50k
+To         50k
+Step Value 1
+Method     Linear
+
+Step What  RS value
+From       0
+To         0
+Step Value 1
+Method     Linear
+
+Step What  C1 value
+From       100p
+To         100p
+Step Value 1
+Method     Linear
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    C1=100p                    ***
+***                     RS=0                      ***
+***                    RL=50k                     ***
+*****************************************************
+
+Temperature=27 C1=100p RS=0 RL=50k
+
+Model parameters for devices of type Pulse
+==========================================
+Instance:             VS   
+Using model:       PULSE   
+P1                0.000    
+P2               10.000p   
+P3               10.000u   
+P4               10.000u   
+P5                1.000m   
+VONE              1.000    
+VZERO             0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   2             0.000   3             0.000  
+E             0.000   U             0.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 RS             RL              L              S
+V                     0.000          0.000          0.000          0.000 
+Power DC Terms:
+PD                    0.000          0.000          0.000          0.000 
+
+DC Pin Currents:
+Ir                    0.000          0.000          0.000          0.000 
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                 C1
+V                     0.000 
+Power DC Terms:
+PS                    0.000 
+
+DC Pin Currents:
+Ic                    0.000 
+
+Device Variables:
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Transmission Line
+=====================================================
+Instance:                 T1
+Power DC Terms:
+PS                    0.000 
+
+DC Pin Currents:
+Input                 0.000 
+Output                0.000 
+
+Device Variables:
+z0                   50.000 
+td                   10.000n
+f                     0.000 
+nl                    0.000 
+
+
+
+Operating Point for Devices of Type Pulse
+=========================================
+Instance:                 VS
+Using model:           PULSE
+V                     0.000 
+Power DC Terms:
+PG                    0.000 
+
+DC Pin Currents:
+ISource               0.000 
+
+
