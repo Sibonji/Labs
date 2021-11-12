@@ -3,6 +3,5 @@
 *.gz
 *.inx*
 *.ANO
-*.bak_CIR
-*.bak_cir
+*.bak*
 *.TNO
