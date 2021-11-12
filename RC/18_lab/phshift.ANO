@@ -1,0 +1,605 @@
+********************************************************************************
+***                            Micro-Cap 10.2.0.0                            ***
+***                                                                          ***
+***                                                                          ***
+***                          AC Analysis of phshift                          ***
+********************************************************************************
+Limits
+======
+Frequency Range  Linear 500k,1k
+Number of Points 1000
+Temperature      Linear 27
+Maximum Change % 5
+Noise Input      NONE
+Noise Output     2
+Run Options      Normal
+State Variables  Zero
+Operating Point  On
+
+Stepping Options
+================
+Stepping is Nested
+
+Step What  R value
+From       1k
+To         15k
+Step Value 2k
+Method     Linear
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R=1k                      ***
+*****************************************************
+
+Temperature=27 R=1k
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                1.000MEG(*)
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   UL            0.000   UR            0.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                   R              R2              R3           V1.RS
+V                      0.000           0.000           0.000           0.000 
+Power DC Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+Device Variables:
+tc1                    0.000           0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                   C
+V                      0.000 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R=3k                      ***
+*****************************************************
+
+Temperature=27 R=3k
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                1.000MEG(*)
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   UL            0.000   UR            0.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                   R              R2              R3           V1.RS
+V                      0.000           0.000           0.000           0.000 
+Power DC Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+Device Variables:
+tc1                    0.000           0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                   C
+V                      0.000 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R=5k                      ***
+*****************************************************
+
+Temperature=27 R=5k
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                1.000MEG(*)
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   UL            0.000   UR            0.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                   R              R2              R3           V1.RS
+V                      0.000           0.000           0.000           0.000 
+Power DC Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+Device Variables:
+tc1                    0.000           0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                   C
+V                      0.000 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R=7k                      ***
+*****************************************************
+
+Temperature=27 R=7k
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                1.000MEG(*)
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   UL            0.000   UR            0.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                   R              R2              R3           V1.RS
+V                      0.000           0.000           0.000           0.000 
+Power DC Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+Device Variables:
+tc1                    0.000           0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                   C
+V                      0.000 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R=9k                      ***
+*****************************************************
+
+Temperature=27 R=9k
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                1.000MEG(*)
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   UL            0.000   UR            0.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                   R              R2              R3           V1.RS
+V                      0.000           0.000           0.000           0.000 
+Power DC Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+Device Variables:
+tc1                    0.000           0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                   C
+V                      0.000 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R=11k                     ***
+*****************************************************
+
+Temperature=27 R=11k
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                1.000MEG(*)
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   UL            0.000   UR            0.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                   R              R2              R3           V1.RS
+V                      0.000           0.000           0.000           0.000 
+Power DC Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+Device Variables:
+tc1                    0.000           0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                   C
+V                      0.000 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R=13k                     ***
+*****************************************************
+
+Temperature=27 R=13k
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                1.000MEG(*)
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   UL            0.000   UR            0.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                   R              R2              R3           V1.RS
+V                      0.000           0.000           0.000           0.000 
+Power DC Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+Device Variables:
+tc1                    0.000           0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                   C
+V                      0.000 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R=15k                     ***
+*****************************************************
+
+Temperature=27 R=15k
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                1.000MEG(*)
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   UL            0.000   UR            0.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                   R              R2              R3           V1.RS
+V                      0.000           0.000           0.000           0.000 
+Power DC Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+Device Variables:
+tc1                    0.000           0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                   C
+V                      0.000 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
