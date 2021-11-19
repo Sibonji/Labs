@@ -1,0 +1,69 @@
+\documentclass[a4paper, 12pt]{article}%тип документа
+
+%отступы
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm,bindingoffset=0cm]{geometry}
+
+%Русский язык
+\usepackage[T2A]{fontenc} %кодировка
+\usepackage[utf8]{inputenc} %кодировка исходного кода
+\usepackage[english,russian]{babel} %локализация и переносы
+
+%Вставка картинок
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\graphicspath{{pictures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+%оглавление
+\usepackage{titlesec}
+\titlespacing{\chapter}{0pt}{-30pt}{12pt}
+\titlespacing{\section}{\parindent}{5mm}{5mm}
+\titlespacing{\subsection}{\parindent}{5mm}{5mm}
+\usepackage{setspace}
+
+%Графики
+\usepackage{multirow}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+
+%Математика
+\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+
+%Стиль страницы
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+%\vspace*{1cm}
+\large\textbf{Московский Физико-Технический Институт}\\
+\large\textbf{(государственный университет)}
+\vfill
+\line(1,0){430}\\[1mm]
+\huge\textbf{Работа }\\
+\line(1,0){430}\\[1mm]
+\vfill
+\large Сибгатуллин Булат, ФРКТ\\
+\end{center}
+
+\end{titlepage}
+\fancyhead[L] {Работа }
+\noindent \textbf{Цель работы:} \\
+\indent text\\
+\noindent \textbf{В работе используются:} \\
+\indent text
+
+\section*{Описание работы}
+
+%Вставка изображения
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{images/image.png}
+\caption{text}
+\label{fig:Image1}
+\end{figure}
+
+\end{document}
