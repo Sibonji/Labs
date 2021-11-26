@@ -200,7 +200,7 @@ Pin="Plus",6,0,-5,-4
 Pin="Minus",0,0,-19,-4
 
 [Circuit]
-Window Placement=2,3, -1,-1, -8,-31, 0,0,1001,603
+Window Placement=2,3, -1,-1, -8,-31, 0,0,1001,581
 Default Object=Color=#000080
 Default Object Font=Height=-23,FStyle=0,Color=#000080,Name=Arial
 Default Object Apply Border To Text=No
@@ -451,7 +451,7 @@ Style=8192
 
 [Attr]
 ON=30,-24,RESISTANCE
-V=1
+V=2.5
 Style=8192
 
 [Comp]
@@ -734,7 +734,7 @@ Scale 0=1
 Scale 1=1
 Scale 2=1
 Scale 3=0.6666666666666666
-Grid=52,31
+Grid=44,18
 
 [Page]
 Index=1
@@ -1270,7 +1270,7 @@ NOFmtY=3
 
 [Limits]
 Analysis=AC
-FRange=1.05Meg,950k
+FRange=1.055Meg,950k
 NPts=10000
 Temp=27
 MaxChng=5
@@ -1288,12 +1288,12 @@ Plt=1
 AliasID=1
 XExp=F
 YExp=db(v(U1))
-XRng=1.05e6,950000
+XRng=1.055e6,950000
 YRng=0,-40
 Options=LINEARX,LINEARY
 Range Grid X=20000
 Range Grid Y=3
-Enable=Hide
+Enable=Enable
 DPS=Open Bubbles
 CS=Normal
 Line Color=#0000FF
@@ -1316,12 +1316,12 @@ Plt=1
 AliasID=7
 XExp=F
 YExp=db(v(U2))
-XRng=1.05e6,950000
+XRng=1.055e6,950000
 YRng=0,-40
 Options=LINEARX,LINEARY
 Range Grid X=20000
 Range Grid Y=3
-Enable=Hide
+Enable=Enable
 DPS=Open Bubbles
 CS=Normal
 Line Color=#FF0000
@@ -1344,12 +1344,12 @@ Plt=1
 AliasID=9
 XExp=F
 YExp=db(v(u))
-XRng=1.05e6,950000
+XRng=1.055e6,950000
 YRng=0,-40
 Options=LINEARX,LINEARY
 Range Grid X=20000
 Range Grid Y=2
-Enable=Hide
+Enable=Enable
 DPS=Open Bubbles
 CS=Normal
 Line Color=#006200
@@ -1372,12 +1372,12 @@ Plt=2
 AliasID=10
 XExp=F
 YExp=v(U1)
-XRng=1.05e6,950000
+XRng=1.055e6,950000
 YRng=1.1,0
 Options=LINEARX,LINEARY
 Range Grid X=20000
 Range Grid Y=0.1
-Enable=Enable
+Enable=Hide
 DPS=Open Bubbles
 CS=Normal
 Line Color=#0000FF
@@ -1400,13 +1400,13 @@ Plt=2
 AliasID=2
 XExp=F
 YExp=v(U2)
-XRng=1.05e6,950000
+XRng=1.055e6,950000
 YRng=1.1,0
 Options=LINEARX,LINEARY
 Range Grid X=20000
 Range Grid Y=0.1
 Slope Calculation=dB/Octave
-Enable=Enable
+Enable=Hide
 DPS=Open Bubbles
 CS=Normal
 Line Color=#FF0000
@@ -1429,12 +1429,12 @@ Plt=2
 AliasID=5
 XExp=F
 YExp=v(u)
-XRng=1.05e6,950000
+XRng=1.055e6,950000
 YRng=1.1,0
 Options=LINEARX,LINEARY
 Range Grid X=20000
 Range Grid Y=0.1
-Enable=Enable
+Enable=Hide
 DPS=Open Bubbles
 CS=Normal
 Line Color=#008000
@@ -1457,7 +1457,7 @@ Plt=3
 AliasID=3
 XExp=F
 YExp=ph(v(U1))
-XRng=1.05e6,950000
+XRng=1.055e6,950000
 YRng=90,-270
 Options=LINEARX,LINEARY
 Range Grid X=20000
@@ -1484,7 +1484,7 @@ Plt=3
 AliasID=4
 XExp=F
 YExp=ph(v(u2))
-XRng=1.05e6,950000
+XRng=1.055e6,950000
 YRng=90,-270
 Options=LINEARX,LINEARY
 Range Grid X=20000
@@ -1512,7 +1512,7 @@ Plt=3
 AliasID=6
 XExp=F
 YExp=ph(v(u))
-XRng=1.05e6,950000
+XRng=1.055e6,950000
 YRng=90,-270
 Options=LINEARX,LINEARY
 Range Grid X=20000
@@ -1539,7 +1539,7 @@ Plt=4
 AliasID=11
 XExp=F
 YExp=Re(1/v(u1) -1/v(u))
-XRng=1.05e6,950000
+XRng=1.055e6,950000
 YRng=1,-1
 Options=LINEARX,LINEARY
 Range Grid X=20000
@@ -1565,7 +1565,7 @@ Plt=4
 AliasID=8
 XExp=F
 YExp=Im(1/v(u1)-1/v(u))
-XRng=1.05e6,950000
+XRng=1.055e6,950000
 YRng=1,-1
 Options=LINEARX,LINEARY
 Range Grid X=20000
@@ -1625,7 +1625,6 @@ Value=1
 [Stepping]
 Analysis=AC
 Index=1
-Status=On
 Parameter Type=Component
 Name=R1
 Param=value
@@ -1636,7 +1635,6 @@ Value=200K
 [Stepping]
 Analysis=AC
 Index=2
-Status=On
 Parameter Type=Component
 Name=R2
 Param=value
@@ -1650,8 +1648,8 @@ Index=3
 Parameter Type=Component
 Name=C1
 Param=value
-From=155.2p
-To=155.2p
+From=159.2p
+To=165p
 Value=1p
 
 [Stepping]
@@ -1660,9 +1658,40 @@ Index=4
 Parameter Type=Component
 Name=C2
 Param=value
-From=158.2p
-To=158.2p
+From=159.2p
+To=165p
 Value=1p
+
+[Stepping]
+Analysis=AC
+Index=5
+Parameter Type=Component
+Name=F
+Param=value
+From=0.75
+To=0.75
+Value=5
+
+[Stepping]
+Analysis=AC
+Index=6
+Status=On
+Parameter Type=Component
+Name=F
+Param=value
+From=2.4
+To=2.4
+Value=100m
+
+[Stepping]
+Analysis=AC
+Index=7
+Parameter Type=Component
+Name=R
+Param=value
+From=60K
+To=80K
+Value=5K
 
 [Optimize]
 Analysis=AC
