@@ -240,7 +240,7 @@ NodeVoltageFormat=3
 PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
-Window Placement in Transient Analysis=2,3, -1,-1, -8,-30, 50,50,1055,657
+Window Placement in Transient Analysis=2,3, -1,-1, -8,-31, 100,100,1112,635
 Window Placement in AC Analysis=2,3, -1,-1, -8,-31, 50,50,1055,657
 Window Placement in DC Analysis=2,3, -1,-1, -8,-30, 50,50,1055,657
 Window Placement in HmDistortion Analysis=2,3, -1,-1, -8,-30, 50,50,1055,657
@@ -280,7 +280,7 @@ ON=0,0,INDUCTORS
 V=L1 L2
 
 [Attr]
-ON=-4,-8,COUPLING
+ON=-4,-7,COUPLING
 V=0.01*R(F)
 Style=8192
 
@@ -451,7 +451,7 @@ Style=8192
 
 [Attr]
 ON=30,-24,RESISTANCE
-V=2.5
+V=1
 Style=8192
 
 [Comp]
@@ -734,7 +734,7 @@ Scale 0=1
 Scale 1=1
 Scale 2=1
 Scale 3=0.6666666666666666
-Grid=44,18
+Grid=50,35
 
 [Page]
 Index=1
@@ -778,7 +778,7 @@ Text=*** 1ns Impulse Source
 Text=.MODEL IMPULSE PUL (VONE=1 P1=0 P2=1n P3=1m P4=1m P5=5m)
 
 [Transient]
-Window Placement=2,3, -1,-1, -8,-30, 100,100,1112,635
+Window Placement=2,3, -1,-1, -8,-31, 100,100,1112,635
 Font=Height=-15,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -840,6 +840,7 @@ FFT_AutoScale_Harmonics="10"
 PrinterAutoTile=No
 PrinterBlackBorder=No
 MonMaxShow=2
+MonPageWidth=66
 MonPlotWidth=21
 MonExprXWidth=142
 MonExprYWidth=260
@@ -1248,10 +1249,10 @@ AliasID=2
 XExp=T
 YExp=v(U2)
 XRng=0.00015
-YRng=0.006,-0.004
+YRng=0.015,-0.01
 Options=LINEARX,LINEARY
 Range Grid X=3e-5
-Range Grid Y=0.002
+Range Grid Y=0.005
 Enable=Enable
 DPS=Open Bubbles
 Line Color=#FF0000
@@ -1270,13 +1271,13 @@ NOFmtY=3
 
 [Limits]
 Analysis=AC
-FRange=1.055Meg,950k
+FRange=10Meg, 100k
 NPts=10000
 Temp=27
 MaxChng=5
 NInput=NONE
 NOutput=2
-Sweep type=Linear
+Sweep type=Log
 StateVar=Zero
 RunOption=Normal
 Temperature Type=Linear
@@ -1288,11 +1289,11 @@ Plt=1
 AliasID=1
 XExp=F
 YExp=db(v(U1))
-XRng=1.055e6,950000
-YRng=0,-40
-Options=LINEARX,LINEARY
-Range Grid X=20000
-Range Grid Y=3
+XRng=1e7,100000
+YRng=0, -160
+Options=LINEARY
+Range Grid X=1.98e6
+Range Grid Y=10
 Enable=Enable
 DPS=Open Bubbles
 CS=Normal
@@ -1316,11 +1317,11 @@ Plt=1
 AliasID=7
 XExp=F
 YExp=db(v(U2))
-XRng=1.055e6,950000
-YRng=0,-40
-Options=LINEARX,LINEARY
-Range Grid X=20000
-Range Grid Y=3
+XRng=1e7,100000
+YRng=0, -160
+Options=LINEARY
+Range Grid X=1.98e6
+Range Grid Y=10
 Enable=Enable
 DPS=Open Bubbles
 CS=Normal
@@ -1344,11 +1345,11 @@ Plt=1
 AliasID=9
 XExp=F
 YExp=db(v(u))
-XRng=1.055e6,950000
-YRng=0,-40
-Options=LINEARX,LINEARY
-Range Grid X=20000
-Range Grid Y=2
+XRng=1e7,100000
+YRng=0, -160
+Options=LINEARY
+Range Grid X=1.98e6
+Range Grid Y=10
 Enable=Enable
 DPS=Open Bubbles
 CS=Normal
@@ -1372,10 +1373,10 @@ Plt=2
 AliasID=10
 XExp=F
 YExp=v(U1)
-XRng=1.055e6,950000
+XRng=2e6,600000
 YRng=1.1,0
 Options=LINEARX,LINEARY
-Range Grid X=20000
+Range Grid X=280000
 Range Grid Y=0.1
 Enable=Hide
 DPS=Open Bubbles
@@ -1400,10 +1401,10 @@ Plt=2
 AliasID=2
 XExp=F
 YExp=v(U2)
-XRng=1.055e6,950000
+XRng=2e6,600000
 YRng=1.1,0
 Options=LINEARX,LINEARY
-Range Grid X=20000
+Range Grid X=280000
 Range Grid Y=0.1
 Slope Calculation=dB/Octave
 Enable=Hide
@@ -1429,10 +1430,10 @@ Plt=2
 AliasID=5
 XExp=F
 YExp=v(u)
-XRng=1.055e6,950000
+XRng=2e6,600000
 YRng=1.1,0
 Options=LINEARX,LINEARY
-Range Grid X=20000
+Range Grid X=280000
 Range Grid Y=0.1
 Enable=Hide
 DPS=Open Bubbles
@@ -1457,10 +1458,10 @@ Plt=3
 AliasID=3
 XExp=F
 YExp=ph(v(U1))
-XRng=1.055e6,950000
+XRng=2e6,600000
 YRng=90,-270
 Options=LINEARX,LINEARY
-Range Grid X=20000
+Range Grid X=280000
 Range Grid Y=45
 Enable=Hide
 CS=Normal
@@ -1484,10 +1485,10 @@ Plt=3
 AliasID=4
 XExp=F
 YExp=ph(v(u2))
-XRng=1.055e6,950000
+XRng=2e6,600000
 YRng=90,-270
 Options=LINEARX,LINEARY
-Range Grid X=20000
+Range Grid X=280000
 Range Grid Y=45
 Enable=Hide
 DPS=Filled Bubbles
@@ -1512,10 +1513,10 @@ Plt=3
 AliasID=6
 XExp=F
 YExp=ph(v(u))
-XRng=1.055e6,950000
+XRng=2e6,600000
 YRng=90,-270
 Options=LINEARX,LINEARY
-Range Grid X=20000
+Range Grid X=280000
 Range Grid Y=45
 Enable=Hide
 CS=Normal
@@ -1540,10 +1541,10 @@ AliasID=11
 XExp=F
 YExp=Re(1/v(u1) -1/v(u))
 XRng=1.055e6,950000
-YRng=1,-1
+YRng=1.5,-1
 Options=LINEARX,LINEARY
 Range Grid X=20000
-Range Grid Y=0.2
+Range Grid Y=1
 Enable=Hide
 Line Color=#0000FF
 Text Color=#0000FF
@@ -1566,10 +1567,10 @@ AliasID=8
 XExp=F
 YExp=Im(1/v(u1)-1/v(u))
 XRng=1.055e6,950000
-YRng=1,-1
+YRng=1.5,-1
 Options=LINEARX,LINEARY
 Range Grid X=20000
-Range Grid Y=0.2
+Range Grid Y=1
 Enable=Hide
 CS=Normal
 Line Color=#FF0000
@@ -1598,6 +1599,7 @@ PlaceText=True
 
 [Pane]
 Analysis=Transient
+CurrentPage 0="Main"
 
 [Pane]
 Analysis=AC
@@ -1615,21 +1617,23 @@ Analysis=ImDistortion
 [Stepping]
 Analysis=Transient
 Index=1
+Status=On
 Parameter Type=Component
 Name=F
-Param=Value
-From=2.5
-To=2.5
-Value=1
+Param=value
+From=8
+To=8
+Value=10
 
 [Stepping]
 Analysis=AC
 Index=1
+Status=On
 Parameter Type=Component
 Name=R1
 Param=value
-From=300K
-To=300K
+From=100K
+To=900K
 Value=200K
 
 [Stepping]
@@ -1668,20 +1672,19 @@ Index=5
 Parameter Type=Component
 Name=F
 Param=value
-From=0.75
-To=0.75
-Value=5
+From=99.9
+To=99.9
+Value=10
 
 [Stepping]
 Analysis=AC
 Index=6
-Status=On
 Parameter Type=Component
 Name=F
 Param=value
-From=2.4
-To=2.4
-Value=100m
+From=1
+To=5.5
+Value=1.5
 
 [Stepping]
 Analysis=AC
@@ -1689,9 +1692,29 @@ Index=7
 Parameter Type=Component
 Name=R
 Param=value
-From=60K
-To=80K
-Value=5K
+From=70K
+To=70K
+Value=1K
+
+[Stepping]
+Analysis=AC
+Index=8
+Parameter Type=Component
+Name=F
+Param=value
+From=70
+To=70
+Value=1
+
+[Stepping]
+Analysis=AC
+Index=9
+Parameter Type=Component
+Name=K1
+Param=value
+From=0.0142
+To=0.0142
+Value=1
 
 [Optimize]
 Analysis=AC
