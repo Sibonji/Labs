@@ -96,29 +96,198 @@ f = \sum\limits_{n = 0}^{\inf} a_n \cos (n \omega_0 t + \phi_n ).\]
 
 \begin{enumerate}
 
-\item Включим...
+\item Соберем и запустим усановку. Установим на анализаторе спектра режим работы с однократной разверткой и получим на экране спектр импульсов с параметрами:
 
-\item 
+а)$f_{\text{повт}} = 10^3$ Гц; $\tau = 25$ мкс; частотный масштаб $m_x = 5$ кГц/дел.
+
+б)$f_{\text{повт}} = 10^3$ Гц; $\tau = 50$ мкс; частотный масштаб $m_x = 5$ кГц/дел.
+
+в)$f_{\text{повт}} = 2\cdot 10^3$ Гц; $\tau = 25$ мкс; частотный масштаб $m_x = 5$ кГц/дел.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/25_1000-a.jpg}
+\caption{$f_{\text{повт}} = 10^3$ Гц; $\tau = 25$ мкс}
+\label{fig:Image1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/50_1000-a.jpg}
+\caption{$f_{\text{повт}} = 10^3$ Гц; $\tau = 50$ мкс}
+\label{fig:Image1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/25_2000-a.jpg}
+\caption{$f_{\text{повт}} = 2\cdot 10^3$ Гц; $\tau = 25$ мкс}
+\label{fig:Image1}
+\end{figure}
+
+\item Проведем измерения зависимости ширины спектра  от длительности импульса $\bigtriangleup \nu (\tau)$ при увеличении $\tau$ от 25 до 200 мкс. Запишем данные в таблицу.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.2]{images/table1.png}
+\label{fig:Image1}
+\end{figure}
+
+\item Зарисуем спектры с параметрами $f_{\text{повт}} = 1$ кГц:
+
+а) $\tau = 50$ мкс
+
+б) $\tau = 100$ мкс
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/50_1000-a.jpg}
+\caption{$f_{\text{повт}} = 10^3$ Гц; $\tau = 50$ мкс}
+\label{fig:Image1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/100_1000-a.jpg}
+\caption{$f_{\text{повт}} = 10^3$ Гц; $\tau = 100$ мкс}
+\label{fig:Image1}
+\end{figure}
+
+\item Построим график зависимости $\bigtriangleup \nu (1/\tau)$ и по его наклону убедимся в том, что зависимость линейная:
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{images/graph1.png}
+\label{fig:Image1}
+\end{figure}
 
 \end{enumerate}
+
+\newpage
 
 \subsection*{Б}
 
 \begin{enumerate}
 
-\item Зарисуем, как изменяется спектр при ...
+\item Изменим схему установки. Установим частоту несущей $\nu_0 = 25$ кГц и проанализируем как изменяется вид спектра:
 
-\item 
+а)при увеличении длительности импульса вдвое ($\tau = 50, 100$ мкс для $f_{\text{повт}} = 1$ кГц.
+
+б)при изменении несущей частоты $\nu_0$ (на генераторе Г6-34 $\nu_0 = 25, 10$ или 40 кГц) при фиксированных значениях $f_{\text{повт}} = 1$ кГц, $\tau = 100$ мкс.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/50_1000_25-b.jpg}
+\caption{$f_{\text{повт}} = 10^3$ Гц, $\tau = 50$ мкс, $\nu_0 = 25$ кГц}
+\label{fig:Image1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/100_1000_25-b.jpg}
+\caption{$f_{\text{повт}} = 10^3$ Гц, $\tau = 100$ мкс, $\nu_0 = 25$ кГц}
+\label{fig:Image1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/100_1000_10-b.jpg}
+\caption{$f_{\text{повт}} = 10^3$ Гц, $\tau = 100$ мкс, $\nu_0 = 10$ кГц}
+\label{fig:Image1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/100_1000_40-b.jpg}
+\caption{$f_{\text{повт}} = 10^3$ Гц, $\tau = 100$ мкс, $\nu_0 = 40$ кГц}
+\label{fig:Image1}
+\end{figure}
+
+\newpage
+
+\item  При фиксированной длительности импульсов $\tau = 50$ мкс исследуем зависимость расстояния $\delta \nu$ между соседними спектральными компонентами от периода $T$ (частоты повторения импульсов $f_{\text{повт}}$). Запишем данные в таблицу:
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.2]{images/table2.png}
+\caption{Зависимость $\delta \nu (T)$}
+\label{fig:Image1}
+\end{figure}
+
+\newpage
+
+\item Посмотрим на спектры цугов с параметрами $\tau = 100$ мкс, $m_x = 5$ кГц/дел:
+
+а)$f_{\text{повт}} = 1$ кГц
+
+б)$f_{\text{повт}} = 2$ кГц
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/100_1000_25-b2.jpg}
+\caption{$f_{\text{повт}} = 10^3$ Гц, $\tau = 100$ мкс, $\nu_0 = 25$ кГц}
+\label{fig:Image1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/100_2000_25-b.jpg}
+\caption{$f_{\text{повт}} = 2\cdot 10^3$ Гц, $\tau = 100$ мкс, $\nu_0 = 25$ кГц}
+\label{fig:Image1}
+\end{figure}
+
+\newpage
+
+\item Построим график $\delta \nu (f_{\text{повт}})$:
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{images/graph2.png}
+\label{fig:Image1}
+\end{figure}
 
 \end{enumerate}
+
+\newpage
 
 \subsection*{В}
 
 \begin{enumerate}
 
-\item 
+\item Соберем схему изображенную на рисунке.
 
-\item При увеличении частоты модулирующего сигнала у нас увеличивается $\Omega$.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{images/scheme2.png}
+\label{fig:Image1}
+\end{figure}
+
+\item Изменяя глубину модуляции исследуем зависимость отношения амплитуды боковой линии спектра к амплитуде основной линии ($a_{\text{бок}}/a_{\text{осн}}$) от глубины модуляции $m$, вычисляемой по формуле:
+
+\[m = \frac{A_{max} - A_{min}}{A_{max} + A_{min}}\]
+
+Запишем данные в таблицу:
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.2]{images/table3.png}
+\caption{Зависимость $a_{\text{бок}/a_{\text{осн}}} = f(m)$}
+\label{fig:Image1}
+\end{figure}
+
+\item По полученным данным построим график $a_{\text{бок}/a_{\text{осн}}} = f(m)$: $\pm$
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{images/graph3.png}
+\label{fig:Image1}
+\end{figure}
+
+Получаем значение углового коэффициента наклона:
+
+\[a = 0,46 \pm 0,01,\]
+
+что примерно совпадает с теоретическим значением для данной величины.
 
 \end{enumerate}
 
