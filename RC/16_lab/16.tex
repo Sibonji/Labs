@@ -24,7 +24,6 @@
 \usepackage{titlesec}
 \titlespacing{\chapter}{0pt}{-30pt}{12pt}
 \titlespacing{\section}{\parindent}{5mm}{5mm}
-\titlespacing{\subsection}{\parindent}{5mm}{5mm}
 \usepackage{setspace}
 
 %Графики
@@ -45,7 +44,7 @@
 \large\textbf{(государственный университет)}
 \vfill
 \line(1,0){430}\\[1mm]
-\huge\textbf{Работа 20}\\
+\huge\textbf{Работа 16}\\
 \line(1,0){430}\\[1mm]
 \vfill
 \large Сибгатуллин Булат, ФРКТ\\
@@ -55,37 +54,40 @@
 
 \section{}
 
-\subsection{\textbf{model1\_1}}
+\subsection*{\textbf{model1\_1}}
 
-\subsubsection{}
+\begin{enumerate}
+
+\item
 
 Исследуем модель резистора как источника шумового напряжения, изучим зависимость шумового напряжения от R, получим что шум растет как $\sqrt{R}$.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod1_1_1_2.png}
+    \includegraphics[scale=0.3]{images/mod1_1_1_2.png}
     \caption{Зависимость шумового напряжения от R}
     \label{fig:eR}
 \end{figure}
 
-\subsubsection{}
+\item
 
 Измерим уровень шума $\sigma$ на выводе резистора в полосе F = 1 МГц.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod1_1_2_1.png}
+    \includegraphics[scale=0.3]{images/mod1_1_2_1.png}
     \caption{R = [1k, 16k| Log2]}
     \label{fig:R16}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod1_1_2_2.png}
+    \includegraphics[scale=0.3]{images/mod1_1_2_2.png}
     \caption{R = [1k, 1000k| Log10]}
     \label{fig:R1000}
 \end{figure}
 
+\begin{center}
 \begin{table}[h!]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|} \hline
@@ -95,47 +97,56 @@
     \caption{Зависимость уровня шума $\sigma$ от R}
     \label{tab:sR}
 \end{table}
+\end{center}
 
-\subsubsection{}
+\item
 
 Перейдем к модели источника тока, получаем, что с увеличением R1 ток остается нулевым, а напряжение растет как $\sqrt{R}$.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod1_1_3.png}
+    \includegraphics[scale=0.3]{images/mod1_1_3.png}
     \caption{Шумовые напряжение и ток в модели с источником тока}
     \label{fig:R3}
 \end{figure}
 
-\subsection{\textbf{model1\_2}}
+\end{enumerate}
 
-\subsubsection{}
+\subsection*{\textbf{model1\_2}}
+
+\begin{enumerate}
+
+\item
 
 Изучим шумы в схеме с последовательным соединением, проверим закон сложения шумовых напряжений.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod1_2_1.png}
+    \includegraphics[scale=0.3]{images/mod1_2_1.png}
     \caption{Варьирование R = [0,1k, 1k| 1k], R = [0,2k, 2k| 2k]}
     \label{fig:1_2_1}
 \end{figure}
 
 Закон сложения шумовых напряжений выполняется.
 
-\subsubsection{}
+\item
  
-Перейдем к схеме с параллельным соединением.
+Перейдем к схеме с параллельным соединением (рис. 6). Закон сложения шумовых токов выполняется.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod1_2_2.png}
+    \includegraphics[scale=0.3]{images/mod1_2_2.png}
     \caption{Варьирование R = [1k, 100k| 99k], R = [2k, 100k| 98k]}
     \label{fig:1_2_2}
 \end{figure}
 
-\subsection{\textbf{model1\_3}}
+\end{enumerate}
 
-\subsubsection{}
+\subsection*{\textbf{model1\_3}}
+
+\begin{enumerate}
+
+\item
 
 Измерим шумовое напряжение в узле $n(f) = 5,2 \text{ нB}\sqrt{\text{Гц}}$. 
 
@@ -143,7 +154,7 @@
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod1_3_1.png}
+    \includegraphics[scale=0.3]{images/mod1_3_1.png}
     \caption{Приведенное ко входу напряжение $e_n$ от R}
     \label{fig:1_3_1}
 \end{figure}
@@ -162,23 +173,27 @@
 \end{axis}
 \end{tikzpicture}
 
-\subsubsection{} 
+\item 
 
 Исключим резистор R и поставим вместо него нешумящий резистор H. 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod1_3_2.png}
+    \includegraphics[scale=0.3]{images/mod1_3_2.png}
     \caption{Нешумящий резистор}
 \end{figure}
 
+\end{enumerate}
+
 \section{\textbf{model2}}
 
-\subsection{}
+\begin{enumerate}
+
+\item
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod2_1_1.png}
+    \includegraphics[scale=0.3]{images/mod2_1_1.png}
     \caption{Микротоки}
     \label{fig:m211}
 \end{figure}
@@ -193,7 +208,7 @@
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod2_1_2.png}
+    \includegraphics[scale=0.3]{images/mod2_1_2.png}
     \caption{Умеренные токи}
     \label{fig:m212}
 \end{figure}
@@ -208,13 +223,12 @@
     \item $I_{06} = 32\mu$ => $e_{06} = 92.61p \approx \sqrt{32}e_{01}$;
 \end{itemize}
 
-Напряжение пробоя диода???
+\item
 
-\subsection{}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod2_2.png}
+    \includegraphics[scale=0.3]{images/mod2_2.png}
     \caption{$K = r_d/(R_1 + r_d)$}
     \label{fig:m212}
 \end{figure}
@@ -228,11 +242,11 @@
     \item $I_{04} = 1m$ => $K_{4} = 841.71m$ => $r_d = 8417.1$ Ом;
 \end{itemize}
 
-\subsection{}
+\item
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod2_3.png}
+    \includegraphics[scale=0.3]{images/mod2_3.png}
     \caption{e(f) для I = [1u, 10m|Log10]}
     \label{fig:m23}
 \end{figure}
@@ -246,13 +260,19 @@
     \item $I_{05} = 10m$ => $e(f)_\text{теор} = 410n$, $e(f)_\text{прак} = 304p$;
 \end{itemize}
 
+\end{enumerate}
+
 \section{\textbf{model3}}
 
-\subsection{Интегрирующая цепь}
+\subsection*{Интегрирующая цепь}
+
+\begin{enumerate}
+
+\item
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_1_1.png}
+    \includegraphics[scale=0.3]{images/mod3_1_1.png}
     \caption{Граничная частота $f_h = 10$}
     \label{fig:m311}
 \end{figure}
@@ -263,7 +283,7 @@ $\sigma_\text{прак} = 1.60\mu$
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_1_2.png}
+    \includegraphics[scale=0.3]{images/mod3_1_2.png}
     \caption{Уровень шума}
     \label{fig:m312}
 \end{figure}
@@ -279,7 +299,7 @@ $\sigma_\text{прак} = 1.60\mu$
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_1_3.png}
+    \includegraphics[scale=0.3]{images/mod3_1_3.png}
     \caption{Варьирование $R_1$ = [2k, 16k|4k]}
     \label{fig:m313}
 \end{figure}
@@ -295,23 +315,30 @@ $\sigma_\text{прак} = 1.60\mu$
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_1_4.png}
+    \includegraphics[scale=0.3]{images/mod3_1_4.png}
     \caption{Варьирование $C_1$ = [0.8n, 2.4n|0.4n]}
     \label{fig:m314}
 \end{figure}
 
-\subsection{Полосовой LC-фильтр}
+
+\end{enumerate}
+
+\subsection*{Полосовой LC-фильтр}
+
+\begin{enumerate}
+
+\item
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_2_1.png}
+    \includegraphics[scale=0.3]{images/mod3_2_1.png}
     \caption{$f_0 = 100k, \Delta f = 20k$, Q = 5}
     \label{fig:m321}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_2_2.png}
+    \includegraphics[scale=0.3]{images/mod3_2_2.png}
     \caption{$n_2(f_0) = 10n, \sigma = 1.82\mu$}
     \label{fig:m322}
 \end{figure}
@@ -320,7 +347,7 @@ $\sigma_\text{прак} = 1.60\mu$
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_2_3.png}
+    \includegraphics[scale=0.3]{images/mod3_2_3.png}
     \caption{Варьирование $R_2$ = [2.3k, 10.3k|4k]}
     \label{fig:m323}
 \end{figure}
@@ -334,7 +361,7 @@ $\sigma_\text{прак} = 1.60\mu$
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_2_4.png}
+    \includegraphics[scale=0.3]{images/mod3_2_4.png}
     \caption{Варьирование $C_2$ = [0.75n, 1.75n|0.5n]}
     \label{fig:m324}
 \end{figure}
@@ -348,16 +375,23 @@ $\sigma_\text{прак} = 1.60\mu$
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_2_5.png}
+    \includegraphics[scale=0.3]{images/mod3_2_5.png}
     \caption{Варьирование $L_2$ = [1m, 3m|1m]}
     \label{fig:m325}
 \end{figure}
 
-\subsection{LC-фильтр нижних частот}
+
+\end{enumerate}
+
+\subsection*{LC-фильтр нижних частот}
+
+\begin{enumerate}
+
+\item
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_3_1.png}
+    \includegraphics[scale=0.3]{images/mod3_3_1.png}
     \caption{$n_3(f_0) = 10.2n, n_3(f_0/10) = 1.9n, \sigma = 1.82\mu$}
     \label{fig:m331}
 \end{figure}
@@ -366,337 +400,417 @@ $\sigma_\text{прак} = 1.60\mu$
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_3_2_1.png}
+    \includegraphics[scale=0.3]{images/mod3_3_2_1.png}
     \caption{Варьирование R3 = [100,400|150]}
     \label{fig:m3321}
 \end{figure}
 
+\begin{center}
 \begin{tabular}{|c|c|c|c|}
+\hline
     R3 & 400 & 250 & 100\\ \hline
     $n_3(f_0)$ & 8.1n & 10.3n & 15.9n\\ \hline
     $n_3(f_0/10)$ & 1.1n & 2n & 2.6n\\ \hline
     $\sigma$ & 1.8$\mu$ & &\\ \hline
 \end{tabular}
+\end{center}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_3_2_2.png}
+    \includegraphics[scale=0.3]{images/mod3_3_2_2.png}
     \caption{Варьирование C3 = [0.75n, 1.75n |0.5n]}
     \label{fig:m3322}
 \end{figure}
 
+\begin{center}
 \begin{tabular}{|c|c|c|c|}
+\hline
     C3 & 0.75n & 1.25n & 1.75n\\ \hline
     $n_3(f_0)$ & 13.2n & 10.2n & 8.8n\\ \hline
     $n_3(f_0/10)$ & 2.1n &  & \\ \hline
     $\sigma$ & 2.4$\mu$ & 1.8$\mu$ & 1.5$\mu$ \\ \hline
 \end{tabular}
+\end{center}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_3_2_3.png}
+    \includegraphics[scale=0.3]{images/mod3_3_2_3.png}
     \caption{Варьирование L3 = [1m, 3m |1m]}
     \label{fig:m3323}
 \end{figure}
 
+\begin{center}
 \begin{tabular}{|c|c|c|c|}
+\hline
     L3 & 1m & 2m & 3m\\ \hline
     $n_3(f_0)$ & 7.4n & 10.2n & 12.6n\\ \hline
     $n_3(f_0/10)$ & 2.1n &  & \\ \hline
     $\sigma$ & 1.8$\mu$ &  & \\ \hline
 \end{tabular}
+\end{center}
 
-\subsection{LC-фильтр верхних частот}
+\end{enumerate}
+
+\subsection*{LC-фильтр верхних частот}
+
+\begin{enumerate}
+
+\item
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_4_1.png}
+    \includegraphics[scale=0.3]{images/mod3_4_1.png}
     \caption{$n_4(f_0) = 10.3n, n_4(10 f_0) = 2.0n, \sigma = 2.7\mu$}
     \label{fig:m341}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_4_2_1.png}
+    \includegraphics[scale=0.3]{images/mod3_4_2_1.png}
     \caption{Варьирование R4 = [100,400|150]}
     \label{fig:m3421}
 \end{figure}
 
-
+\begin{center}
 \begin{tabular}{|c|c|c|c|}
+\hline
     R3 & 400 & 250 & 100\\ \hline
     $n_4(f_0)$ & 8.2n & 10.2n & 15.9n\\ \hline
     $n_4(10 f_0)$ & 1.1n & 2n & 2.6n\\ \hline
     $\sigma$ & 3.0$\mu$ & 2.7$\mu$ & 2.2 $\mu$ \\ \hline
 \end{tabular}
+\end{center}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_4_2_2.png}
+    \includegraphics[scale=0.3]{images/mod3_4_2_2.png}
     \caption{Варьирование C4 = [0.75n, 1.75n |0.5n]}
     \label{fig:m3422}
 \end{figure}
 
+\begin{center}
 \begin{tabular}{|c|c|c|c|}
+\hline
     C4 & 0.75n & 1.25n & 1.75n\\ \hline
     $n_4(f_0)$ & 13.4n & 10.2n & 8.6n\\ \hline
     $n_4(10 f_0)$ & 1.9n &  & \\ \hline
     $\sigma$ & 3.1$\mu$ & 2.7$\mu$ & 2.5$\mu$\\ \hline
 \end{tabular}
+\end{center}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod3_4_2_3.png}
+    \includegraphics[scale=0.3]{images/mod3_4_2_3.png}
     \caption{Варьирование L4 = [1m, 3m |1m]}
     \label{fig:m3423}
 \end{figure}
 
+\begin{center}
 \begin{tabular}{|c|c|c|c|}
+\hline
     L3 & 1m & 2m & 3m\\ \hline
     $n_4(f_0)$ & 7.4n & 10.4n & 12.6n\\ \hline
     $n_4(10 f_0)$ & 2.0n &  & \\ \hline
     $\sigma$ & 2.6$\mu$ &  & \\ \hline
 \end{tabular}
+\end{center}
+
+\end{enumerate}
 
 \section{\textbf{model4}}
 
-\subsection{Полосовой LC-фильтр}
+\subsection*{Полосовой LC-фильтр}
+
+\begin{enumerate}
+
+\item
+
 \FloatBarrier
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_1_1.png}
+    \includegraphics[scale=0.3]{images/mod4_1_1.png}
     \caption{$f_0 = 100K, F = 32K, K = 0.5$, с теорией соотносится}
     \label{fig:m411}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_1_2_1.png}
+    \includegraphics[scale=0.3]{images/mod4_1_2_1.png}
     \caption{$n(f_0) = 1.32n, n(f_0/10) = 1.89n, \sigma = 1.82\mu$, оба резистора шумящие}
     \label{fig:m4121}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_1_2_2.png}
+    \includegraphics[scale=0.3]{images/mod4_1_2_2.png}
     \caption{$n(f_0) = 1.01n, n(f_0/10) = 1.86n, \sigma = 5.9 \mu$, $R_s1$ - не шумящий}
     \label{fig:m4122}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_1_2_3.png}
+    \includegraphics[scale=0.3]{images/mod4_1_2_3.png}
     \caption{$n(f_0) = 1.01n, n(f_0/10) = 30p, \sigma = 240n$, $R_1$ - не шумящий}
     \label{fig:m4122}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_1_3.png}
+    \includegraphics[scale=0.3]{images/mod4_1_3.png}
     \caption{$e(f_0) = 2.6n, e(f_0/10) = 110.1n => K_n(f_0) \approx 36, K_n(f_0/10) \approx 3$}
     \label{fig:m413}
 \end{figure}
 \FloatBarrier
-\subsection{Полосовой RC-фильтр}
+
+
+\end{enumerate}
+
+\subsection*{Полосовой RC-фильтр}
+
+\begin{enumerate}
+
+\item
+
 \FloatBarrier
 \begin{figure}
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_2_1.png}
+    \includegraphics[scale=0.3]{images/mod4_2_1.png}
     \caption{$f_0 = 50k, F = 152k, K = 0.33$, с теорией сходится}
     \label{fig:m421}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_2_2_1.png}
+    \includegraphics[scale=0.3]{images/mod4_2_2_1.png}
     \caption{$n(f_0) = 5.88n, n(10 f_0) = 1.56n, \sigma = 2.86\mu$, оба резистора шумящие}
     \label{fig:m4221}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_2_2_2.png}
+    \includegraphics[scale=0.3]{images/mod4_2_2_2.png}
     \caption{$n(f_0) = 4.96n, n(10 f_0) = 960p, \sigma = 2.15\mu, R_{s_2}$ не шумящий}
     \label{fig:m4222}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_2_2_3.png}
+    \includegraphics[scale=0.3]{images/mod4_2_2_3.png}
     \caption{$n(f_0) = 240p, n(10 f_0) = 250p, \sigma = 370nб R_2$ нешумящий}
     \label{fig:m4223}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_2_3.png}
+    \includegraphics[scale=0.3]{images/mod4_2_3.png}
     \caption{$e(f_0) = 17.7n, e(f_0/10) = 73.45n, e(f_0/100) = 728.6n => K(f_0) = 7.9, K(f_0/10) = 20.4, K(f_0/100) = 41$}
     \label{fig:m423}
 \end{figure}
 \FloatBarrier
-\subsection{Полосовой LC-фильтр нижних частот}
+
+
+\end{enumerate}
+
+\subsection*{Полосовой LC-фильтр нижних частот}
+
+\begin{enumerate}
+
+\item
+
 \FloatBarrier
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_3_1.png}
+    \includegraphics[scale=0.3]{images/mod4_3_1.png}
     \caption{$f_0 = 102k, F = 36k, K(f_0) = 0.5, K(0) = 0.02$, с теорией сходится}
     \label{fig:m431}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_3_2_1.png}
+    \includegraphics[scale=0.3]{images/mod4_3_2_1.png}
     \caption{$n(f_0) = 7.9n, n(f_0/100) = 1.8n, \sigma = 1.8\mu$, оба шумящие}
     \label{fig:m4321}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_3_2_2.png}
+    \includegraphics[scale=0.3]{images/mod4_3_2_2.png}
     \caption{$n(f_0) = 355p, n(f_0/100) = 1.0n, \sigma = 228.9n, R_3$ шумящий}
     \label{fig:m4322}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_3_2_3.png}
+    \includegraphics[scale=0.3]{images/mod4_3_2_3.png}
     \caption{$n(f_0) = 1.8n, n(f_0/100) = 11.2n, \sigma = 1.7\mu, R_{s3}$ шумящий}
     \label{fig:m4322}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod4_3_3.png}
+    \includegraphics[scale=0.3]{images/mod4_3_3.png}
     \caption{$e(f_0) = 15.4n, e(f_0/100) = 68.3n, e(10 f_0) = 10.9n => K(f_0) = 31.5, K(f_0/100) = 18.9, K(10 f_0) = 15.8$}
     \label{fig:m433}
 \end{figure}
 \FloatBarrier
+
+
+\end{enumerate}
+
 \section{\textbf{model5}}
+
+\begin{enumerate}
+
+\item
+
 \FloatBarrier
 $I_c = 125\mu, r_b = 112.5$ Ом
 
-\subsection{Измерение шумового коллекторного тока}
+
+\end{enumerate}
+
+\subsection*{Измерение шумового коллекторного тока}
+
+\begin{enumerate}
+
 \FloatBarrier
-\subsubsection{}
+\item
 \FloatBarrier
 \begin{figure}
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod5_1_1.png}
+    \includegraphics[scale=0.3]{images/mod5_1_1.png}
     \caption{$h_{21}$ = 84.9}
     \label{fig:m511}
 \end{figure}
 \FloatBarrier
-\subsubsection{}
+\item
 \FloatBarrier
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod5_1_2_1.png}
+    \includegraphics[scale=0.3]{images/mod5_1_2_1.png}
     \caption{Варьирование $H_s = [10, 1000k|Log10]$}
     \label{fig:m5121}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod5_1_2_2.png}
+    \includegraphics[scale=0.3]{images/mod5_1_2_2.png}
     \caption{Варьирование $RB = [0, 100|25]$}
     \label{fig:m5122}
 \end{figure}
 \FloatBarrier
-\subsubsection{}
+\item
 \FloatBarrier
 \begin{figure}
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod5_1_3_1.png}
+    \includegraphics[scale=0.3]{images/mod5_1_3_1.png}
     \caption{Варьирование $H_s = [10, 1000|Log10]$ для $I_c = 0.1m, I_1 = 1.83\mu$}
     \label{fig:m5131}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod5_1_3_2.png}
+    \includegraphics[scale=0.3]{images/mod5_1_3_2.png}
     \caption{Варьирование $RB = [0, 100|25]$ для $I_c = 0.1m, I_1 = 1.83\mu$}
     \label{fig:m5132}
 \end{figure}
 \FloatBarrier
-\subsection{Измерение коэффициента шума}
+
+
+\end{enumerate}
+
+\subsection*{Измерение коэффициента шума}
+
+\begin{enumerate}
+\item
+
 \FloatBarrier
 $R_s$ = 40k.
 
+
+\end{enumerate}
+
 \section{\textbf{model6}}
+
+\begin{enumerate}
+
+\item
 
 $U_p = 1.1$ В, $R_g = 25$ Ом, $I_d = 1m?$
 \FloatBarrier
-\subsection{Исследование шумового тока}
+
+
+\end{enumerate}
+
+\subsection*{Исследование шумового тока}
+
+\begin{enumerate}
+
+\item
+
 \FloatBarrier
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod6_1_1.png}
+    \includegraphics[scale=0.3]{images/mod6_1_1.png}
     \caption{Крутизна транзистора}
     \label{fig:m611}
 \end{figure}
 
+\begin{center}
 \begin{table}[h!]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
         $U_p$ & 2 & 1.8 & 1.6 & 1.4 & 1.2 & 1.0 & 0.8 & 0.6 & 0.4 & 0.2\\ \hline
         $S$ & 1.13 & 1.44 & 1.65 & 1.80 & 1.92 & 2.02 & 2.11 & 2.18 & 2.24 & 2.29 \\ \hline
     \end{tabular}
     \caption{Для $U_p = 1.1 V \, \frac{1}{S} \approx 0.5$}
     \label{tab:my_label}
 \end{table}
+\end{center}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod6_1_2.png}
+    \includegraphics[scale=0.3]{images/mod6_1_2.png}
     \caption{Шумовой ток, варьирование $U_p$}
     \label{fig:m612}
 \end{figure}
 
+\begin{center}
 \begin{table}[h!]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
         $U_p$ & 2.0 & 1.8 & 1.6 & 1.4 & 1.2 & 1.0 & 0.8 & 0.6 & 0.4 & 0.2\\ \hline
         $i_d$, p & 3.37 & 3.05 & 2.88 & 2.78 & 2.71 & 2.66 & 2.62 & 2.59 & 2.56 & 2.54 \\ \hline
     \end{tabular}
     \caption{Для $U_p = 1.1 V\, \gamma = \frac{i_d^2}{4kTS} \approx 0.65$}
     \label{tab:mt612}
 \end{table}
+\end{center}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod6_1_3.png}
+    \includegraphics[scale=0.3]{images/mod6_1_3.png}
     \caption{Шумовой ток, варьирование Н}
     \label{fig:m613}
 \end{figure}
 
+\begin{center}
 \begin{table}[h!]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
         $H$, Meg & 0 & 0.5 & 1 & 1.5 & 2\\ \hline
         $i_d$, n & 2.83 & 64.26 & 129.34 & 192.09 & 257.77 \\ \hline
     \end{tabular}
     \label{tab:mt613}
 \end{table}
-\FloatBarrier
-\subsection{Исследование коэффициента шума}
-\FloatBarrier
-\begin{figure}
-    \centering
-    \includegraphics[scale = 0.4 \textwidth]{images/mod6_2_1.png}
-    \caption{Напряжение на выходе, варьирование R}
-    \label{fig:m621}
-\end{figure}
+\end{center}
 
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|c|c|c|c|c|c|c|}
-        $R$, k & 50 & 80 & 110 & 140 & 170 & 200\\ \hline
-        $K_n$ & \\ \\hline
-        $T_n$
-    \end{tabular}
-    \caption{}
-    \label{tab:my_label}
-\end{table}
+\FloatBarrier
+
+\end{enumerate}
 
 
 \end{document}
