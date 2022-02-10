@@ -1,0 +1,126 @@
+SciDAVis 2.3.0 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+4893
+<table creation_time="2022-09-02 22:10:06:564" caption_spec="%n%C{ - }%c" name="Table1" columns="4" rows="30"><comment><![CDATA[]]></comment><column creation_time="2022-09-02 22:10:06:564" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2022-09-02 22:10:06:564" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2022-09-02 22:10:06:564" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">6.0000000000000000e+00</row></column><column creation_time="2022-09-02 22:10:06:565" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2022-09-02 22:44:12:811" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2022-09-02 22:44:12:811" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.3455999999999999e-02</row><row type="TypeDouble" index="2" invalid="no">2.7889000000000001e-02</row><row type="TypeDouble" index="3" invalid="no">4.2436000000000001e-02</row><row type="TypeDouble" index="4" invalid="no">5.5225000000000003e-02</row><row type="TypeDouble" index="5" invalid="no">7.2900000000000006e-02</row><row type="TypeDouble" index="6" invalid="no">8.4099999999999994e-02</row></column><column creation_time="2022-09-02 22:27:41:906" caption_spec="%n%C{ - }%c" name="3" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2022-09-02 22:27:41:906" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2022-09-02 22:27:41:906" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">6.0000000000000000e+00</row></column><column creation_time="2022-09-02 22:27:44:369" caption_spec="%n%C{ - }%c" name="4" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2022-09-02 23:02:10:930" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2022-09-02 23:02:10:930" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.9290000000000002e-03</row><row type="TypeDouble" index="1" invalid="no">2.0448999999999998e-02</row><row type="TypeDouble" index="2" invalid="no">3.4596000000000002e-02</row><row type="TypeDouble" index="3" invalid="no">4.9729000000000002e-02</row><row type="TypeDouble" index="4" invalid="no">6.2500000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">7.6729000000000006e-02</row><row type="TypeDouble" index="6" invalid="no">9.0601000000000001e-02</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width></table>
+geometry	0	0	743	640	
+
+</table>
+<multiLayer>
+График1	1	1	09.02.2022 23:02
+geometry	743	0	1259	843	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	238
+Alignement	0	0
+<graph>
+ggeometry	8	9	1220	743
+PlotTitle	Зависимость квадратов радиусов колец от их номера	#ff000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffffff	255
+Margin	0
+Border	0	#ff000000
+grid	1	1	1	1	#ff0000ff	0	1	#ffa0a0a4	2	1	#ff0000ff	0	1	#ffa0a0a4	2	1	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	m	r<sub>m</sub><sup>2</sup> | r<sub>m'</sub><sup>2</sup>, мм<sup>2</sup>			
+AxesTitleColors	#ff000000	#ff000000	#ff000000	#ff000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	MS Shell Dlg 2	16	50	0	0	0
+ScaleFont0	MS Shell Dlg 2	19	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	19	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	19	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	19	75	0	0	0
+AxisFont0	MS Shell Dlg 2	19	50	0	0	0
+AxisFont1	MS Shell Dlg 2	19	50	0	0	0
+AxisFont2	MS Shell Dlg 2	19	50	0	0	0
+AxisFont3	MS Shell Dlg 2	19	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesNumberColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffffff	255
+curve	Table1_1	Table1_2	1	0	#ff000000	0	1	7	1	#ff000000	#ff000000	0	#ff000000	14	1	0	64		2	0	0	6	1
+curve	Table1_3	Table1_4	1	0	#ffff0000	0	1	7	2	#ffff0000	#ffff0000	0	#ff000000	14	1	0	64		2	0	0	29	1
+FunctionCurve	0,LinearПриближение1,x,0,6	2			0	1	#ff000000	0	2	0	0	#ff000000	#ffa0a0a4	0	#ff000000	14	1	16	64		2	0	134761136	32960	1
+<formula>
+B=-0.000412428571428571
+A=0.014233
+
+A*x+B
+</formula>
+FunctionCurve	0,LinearПриближение2,x,0,6	2			0	1	#ffff0000	0	2	0	0	#ff000000	#ffa0a0a4	0	#ff000000	14	1	16	64		2	0	259160904	70779965	1
+<formula>
+B=0.00638185714285714
+A=0.0140885714285714
+
+A*x+B
+</formula>
+scale	0	-0.002	0.1	0	7	5	0	0
+scale	1	-0.002	0.1	0	8	5	0	0
+scale	2	-0.1	7	0	9	5	0	0
+scale	3	-0.1	7	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	-0.0337686567164179	0.0982291666666667	MS Shell Dlg 2	19	50	0	0	0	#ff000000	1	0	#00ffffff	0	\c{3}Темные кольца	\c{4}Светлые кольца</legend>
+</graph>
+</multiLayer>
+<log>
+[09.02.2022 22:24	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_2, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 0 до значения по x = 6
+B (y-intercept) = -0,0412428571428572 +/- 0,0830285270622239
+A (slope) = 1,4233 +/- 0,0230279701268537
+--------------------------------------------------------------------------------------
+Chi^2 = 0,0742402371428571
+R^2 = 0,998692865228383
+---------------------------------------------------------------------------------------
+[09.02.2022 22:44	Plot: ''График1'']
+Полиномиальный приближение по набору данных: Table1_2, используя функцию: a0+a1*x
+Ошибки погрешности Y: Неизвестный
+От значения по x = 0 до значения по x = 6
+a0  = -0,000412428571428587 +/- 0,000830285270622242
+a1  = 0,014233 +/- 0,000230279701268537
+--------------------------------------------------------------------------------------
+Chi^2 = 7,42402371428576e-06
+R^2 = 0,998692865228383
+---------------------------------------------------------------------------------------
+[09.02.2022 23:00	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_4, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 0 до значения по x = 6
+B (y-intercept) = 0,00638185714285714 +/- 0,00037801127561198
+A (slope) = 0,0140885714285714 +/- 0,000104841464378657
+--------------------------------------------------------------------------------------
+Chi^2 = 1,53884257142857e-06
+R^2 = 0,999723189849848
+---------------------------------------------------------------------------------------
+[09.02.2022 23:02	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_2, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 0 до значения по x = 6
+B (y-intercept) = -0,000412428571428571 +/- 0,000830285270622241
+A (slope) = 0,014233 +/- 0,000230279701268537
+--------------------------------------------------------------------------------------
+Chi^2 = 7,42402371428574e-06
+R^2 = 0,998692865228383
+---------------------------------------------------------------------------------------
+[09.02.2022 23:03	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_4, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 0 до значения по x = 6
+B (y-intercept) = 0,00638185714285714 +/- 0,00037801127561198
+A (slope) = 0,0140885714285714 +/- 0,000104841464378657
+--------------------------------------------------------------------------------------
+Chi^2 = 1,53884257142857e-06
+R^2 = 0,999723189849848
+---------------------------------------------------------------------------------------
+</log>
