@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/22.0">
+
+	<id>ly.logic.LogiclyDesktop</id>
+
+	<filename>Logicly</filename>
+
+	<name>Logicly</name>
+	
+	<versionNumber>1.8.0</versionNumber>
+
+	<description>A boolean logic gate and circuit simulator.</description>
+
+	<copyright>Copyright (c) 2017 Bowler Hat LLC</copyright>
+
+	<initialWindow>
+		<content>LogiclyDesktop.swf</content>
+		<systemChrome>standard</systemChrome>
+		<transparent>false</transparent>
+		<minimizable>true</minimizable>
+		<maximizable>true</maximizable>
+		<resizable>true</resizable>
+		<visible>false</visible>
+		<width>960</width>
+		<height>640</height>
+		<minSize>760 480</minSize>
+		<requestedDisplayResolution>high</requestedDisplayResolution>
+	</initialWindow>
+
+	<supportedLanguages>en</supportedLanguages>
+
+	<supportedProfiles>extendedDesktop</supportedProfiles>
+
+	<icon>
+		<image16x16>icons/app-icon16.png</image16x16>
+		<image32x32>icons/app-icon32.png</image32x32>
+		<image48x48>icons/app-icon48.png</image48x48>
+		<image128x128>icons/app-icon128.png</image128x128>
+	</icon>
+
+	<fileTypes>
+		<fileType>
+			<name>logicly.DocumentFile</name>
+			<extension>logicly</extension>
+			<description>Logicly Document</description>
+			<contentType>application/logicly</contentType>
+			<icon>
+				<image16x16>icons/doc-icon16.png</image16x16>
+				<image32x32>icons/doc-icon32.png</image32x32>
+				<image48x48>icons/doc-icon48.png</image48x48>
+				<image128x128>icons/doc-icon128.png</image128x128>
+			</icon>
+		</fileType>
+		<fileType>
+			<name>logicly.LibraryFile</name>
+			<extension>logiclylib</extension>
+			<description>Logicly Integated Circuit Library</description>
+			<contentType>application/logiclylib</contentType>
+			<icon>
+				<image16x16>icons/doc-icon16.png</image16x16>
+				<image32x32>icons/doc-icon32.png</image32x32>
+				<image48x48>icons/doc-icon48.png</image48x48>
+				<image128x128>icons/doc-icon128.png</image128x128>
+			</icon>
+		</fileType>
+	</fileTypes>
+</application>

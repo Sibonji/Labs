@@ -1,0 +1,613 @@
+[Main]
+FileType=CIR
+Version=8.01
+Program=Micro-Cap
+Screen=1280,1024
+MCAPVersion=8.1.1.0
+Key ID=Demo
+NLCnt=21
+TXCnt=0
+
+[shapedef]
+Name=Battery
+Line=0,0,22,0
+Line=22,-3,22,3
+Line=26,-7,26,7
+Line=26,0,48,0
+Current=32,8,16,8
+Root="Plus.root",28,-6,0
+
+[shapedef]
+Name=Resistor
+Root="Resistor_Euro",0,-4,0
+
+[shapedef]
+Name=Ground
+Line=0,0,12,0
+Line=12,-8,12,8
+Line=18,-4,18,4
+Line=24,0,24,0
+
+[shapedef]
+Name=Plus.root
+Line=-2,0,2,0
+Line=0,-2,0,2
+
+[shapedef]
+Name=Resistor_Euro
+Rectangle=12,-4,36,4
+Line=0,0,12,0
+Line=48,0,36,0
+Current=32,8,16,8
+
+[compdef]
+Name=Resistor
+Definition=Resistor
+Shape=Resistor
+Mask=7937
+Label Offset=18,6,8,11
+PinCnt=2
+Pin="Plus",6,0,-10,-4
+Pin="Minus",0,0,-14,-4
+
+[compdef]
+Name=Ground
+Definition=Ground
+Shape=Ground
+Mask=1
+Label Offset=0,0,0,0
+PinCnt=1
+Pin="PinA",0,0,-32,8
+
+[compdef]
+Name=Battery
+Definition=Battery
+Shape=Battery
+Mask=4353
+Label Offset=19,7,10,13
+PinCnt=2
+Pin="Plus",6,0,-4,-5
+Pin="Minus",0,0,-10,-5
+
+[Circuit]
+Window Placement=2,3, -1,-1, -8,-30, 271,271,1261,862
+Default Object=Color=4
+Default Object Font=Height=-23,FStyle=0,Color=4,Name=Arial
+Default Object Apply Border To Text=No
+Default Object Apply Fill To Text=No
+WinBackGround Color=15
+Select Color=9
+Select Box Color=4
+Grid Text Color=Height=-20,FStyle=0,Color=1,Name=Arial
+Component Color=12
+Attribute Text=Height=-10,FStyle=0,Color=2,Name=Arial
+Wire Color=2
+Pin Connection=Height=-15,FStyle=0,Color=9,Name=Arial
+Node Number=Height=-12,FStyle=0,Color=13,Name=Arial
+Node Voltage Color=0
+Dynamic AC Voltage Color=56
+Text Banner Text=Height=-23,FStyle=0,Color=1,Name=Arial
+Title Block Background=7
+Current=Height=-17,FStyle=0,Color=12,Name=Arial
+Power/Condition=Height=-17,FStyle=0,Color=9,Name=Arial
+Digital Path Color=9
+Title Block=Height=-23,FStyle=0,Color=0,Name=Arial
+Digital 0 Color=0
+Digital R Color=11
+Digital F Color=11
+Digital 1 Color=9
+Digital X Color=7
+Digital Z Color=8
+Window Placement in Analysis=2,3, -1,-1, -8,-30, 0,0,990,591
+SpiceType=AMBIGUOUS
+Block Select Color=41
+TitleBlock Field_1=$name
+TitleBlock Field_2=$user $company
+TitleBlock Field_3
+TitleBlock Field_4=$date
+TitleBlock Field_5=Page $page of $maxpage
+TitleBlock One Title=False
+Title_Block_Border=False
+Title_Block=False
+
+[Comp]
+Name=Resistor
+Grid=28,19
+Rot=4
+
+[Attr]
+ONV=21,-25,PART,R11
+Style=8192
+
+[Attr]
+ONV=2,-25,VALUE,1k
+Style=8192
+
+[Comp]
+Name=Resistor
+Grid=36,19
+Rot=4
+
+[Attr]
+ONV=21,-25,PART,R12
+Style=8192
+
+[Attr]
+ONV=2,-25,VALUE,1k
+Style=8192
+
+[Comp]
+Name=Resistor
+Grid=44,19
+Rot=4
+
+[Attr]
+ONV=21,-25,PART,R4
+Style=8192
+
+[Attr]
+ONV=2,-25,VALUE,1k
+Style=8192
+
+[Comp]
+Name=Resistor
+Grid=52,19
+Rot=4
+
+[Attr]
+ONV=21,-25,PART,R15
+Style=8192
+
+[Attr]
+ONV=2,-25,VALUE,1k
+Style=8192
+
+[Comp]
+Name=Resistor
+Grid=34,19
+Rot=7
+
+[Attr]
+ONV=-30,10,PART,R21
+Style=8192
+
+[Attr]
+ONV=-27,26,VALUE,2k
+Style=8192
+
+[Comp]
+Name=Resistor
+Grid=42,19
+Rot=7
+
+[Attr]
+ONV=-23,9,PART,R22
+Style=8192
+
+[Attr]
+ONV=-24,26,VALUE,2k
+Style=8192
+
+[Comp]
+Name=Resistor
+Grid=50,19
+Rot=7
+
+[Attr]
+ONV=-27,13,PART,R23
+Style=8192
+
+[Attr]
+ONV=-24,24,VALUE,2k
+Style=8192
+
+[Comp]
+Name=Resistor
+Grid=58,19
+Rot=7
+
+[Attr]
+ONV=-27,11,PART,R24
+Style=8192
+
+[Attr]
+ONV=-26,23,VALUE,2k
+Style=8192
+
+[Comp]
+Name=Ground
+Grid=34,25
+Rot=1
+
+[Comp]
+Name=Ground
+Grid=42,25
+Rot=1
+
+[Comp]
+Name=Ground
+Grid=50,25
+Rot=1
+
+[Comp]
+Name=Ground
+Grid=58,25
+Rot=1
+
+[Comp]
+Name=Battery
+Grid=23,25
+Rot=3
+
+[Attr]
+ONV=-27,-39,PART,V1
+Style=8192
+
+[Attr]
+ONV=10,26,VALUE,1
+
+[Wire]
+Grids=23,19,28,19
+
+[Comp]
+Name=Ground
+Grid=23,25
+Rot=1
+
+[Wire]
+Grids=34,19,36,19
+
+[Wire]
+Grids=42,19,44,19
+
+[Wire]
+Grids=50,19,52,19
+
+[Comp]
+Name=Resistor
+Grid=64,19
+Rot=7
+
+[Attr]
+ONV=-18,11,PART,w
+Style=8192
+
+[Attr]
+ONV=-18,24,VALUE,2k
+Style=8192
+
+[Comp]
+Name=Ground
+Grid=64,25
+Rot=1
+
+[Wire]
+Grids=58,19,64,19
+
+[Node Offsets]
+Offset=1,0,34,19,10,-38
+Offset=2,0,28,19,-2,-40
+Offset=3,0,42,19,7,-40
+Offset=4,0,50,19,6,-38
+Offset=5,0,58,19,9,-40
+
+[Condition Offsets]
+
+[Schematic]
+Page 0=0
+TabSize 0=340
+Page 1=0
+TabSize 1=340
+Page 2=0
+TabSize 2=340
+Page 3=0
+TabSize 3=340
+Splitter.xs=0
+Splitter.ys=0
+TextQuad=4099
+Scale=1
+PrinterScale=1
+View=304
+GridType=Normal
+GridUser=10
+
+[Tools]
+Pos=Top
+SELECT=Yes
+COMP=Yes
+TEXT=Yes
+WIRE=Yes
+WIRED=Yes
+GRAPHIC=Yes
+LINE=No
+ELLIPSE=No
+RECT=No
+DIAM=No
+ARC=No
+PIE=No
+LEFTBRK=No
+RIGHTBRK=No
+BOTHBRK=No
+FLAG=Yes
+META=No
+INFO=Yes
+HELP=Yes
+DIGTRC=No
+DIGTRC2=No
+DIGALL=No
+GRIDTEXT=Yes
+COMPTEXT=Yes
+NODE=Yes
+NODEV=Yes
+CURRENT=Yes
+POWER=Yes
+CONDITIN=Yes
+PIN=Yes
+CROSS=Yes
+GRID=Yes
+BORDER=Yes
+TITLE=Yes
+RUBBER=Yes
+PROPERTY=Yes
+STEP=Yes
+MIRROR=Yes
+ROTATE=Yes
+FLIPY=Yes
+FILPX=Yes
+FINDCOMP=Yes
+FIND=Yes
+REPEAT=No
+MODEL=Yes
+CIR2CKT=No
+ATTDISP=No
+TOFRONT=Yes
+TOBACK=Yes
+PAGEADD=Yes
+PAGEDEL=Yes
+ZOOMIN=Yes
+ZOOMOUT=Yes
+GOTOFLAG=Yes
+COLOR=Yes
+FONT=Yes
+
+[Page]
+Index=0
+Print=True
+Name=Main
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=0.6666666666666666
+Grid=23,22
+
+[Page]
+Index=1
+Type=Text
+Print=False
+Name=Text
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Grid=0,0
+
+[Page]
+Index=2
+Type=Text
+Print=False
+Name=Models
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Grid=0,0
+
+[Page]
+Index=3
+Type=Info
+Print=False
+Name=Info
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Grid=0,0
+
+[Text Area]
+Page=1
+Font=Height=-10,FStyle=0,Color=4,Name=Courier New
+Comment Color=8
+Background Color=15
+Len=0
+
+
+[Text Area]
+Page=2
+Font=Height=-10,FStyle=0,Color=4,Name=Courier New
+Comment Color=8
+Background Color=15
+Len=0
+
+
+[AC]
+Window Placement=2,3, -1,-1, -8,-30, 0,0,990,591
+Font=Height=-15,FStyle=0,Color=12,Name=Arial
+WinBackGround Color=15
+Select Color=9
+Select Box Color=4
+Title
+AutoTitle=Yes
+Grid Color=8
+Grid Weight=1
+Grid Pattern=Dot6
+Tracker Foreground=Height=-15,FStyle=0,Color=0,Name=Arial
+Tracker Background=11
+Baseline color=12
+Static Grids=False
+MinorLog25=Off
+LabelMinor=Off
+Graph Background=15
+Tracker Intercept=False
+Tracker Mouse=True
+Tracker Cursor=True
+Tracker Cursor BranchInfo=False
+Horizontal Cursor=False
+Same Y Scales=Yes
+Enable X Scaling=True
+Enable Y Scaling=True
+Keep X Scales The Same=False
+Number of Grids X=5
+Number of Grids Y=5
+Cursor Select Color Primary=7
+Cursor Select Color Secondary=9
+Data Point Labels Color Fore=Height=-15,FStyle=0,Color=0,Name=Arial
+Data Point Labels Color Back=11
+FFT_NPts="1024"
+FFT_IncludeDCHarmonic=False
+FFT_AutoScale_Harmonics="10"
+PrinterAutoTile=No
+PrinterBlackBorder=No
+MonMaxShow=1
+MonPlotWidth=21
+MonExprXWidth=142
+MonExprYWidth=260
+MonRangeXWidth=90
+MonRangeYWidth=90
+AnimateWait=0
+AnimateWaitTime=500
+Save_For_Future=No
+Reduce_Display=1
+Reduce_Save=1
+Num Out Header Left
+Num Out Header Center="$MC\n$user\n$company\n$Analysis of $name"
+Num Out Header Right
+Num Out Delimiter=32
+Num Out Write=True
+Num Out Write Models=True
+Num Out Write Zero Models=True
+Num Out Write Undefined Models=True
+Num Out Write Limits=True
+Num Out Write Values=True
+Num Out Write Operating Point=True
+Num Out Font=Height=-23,FStyle=0,Color=4,Name=Courier New
+
+[Tools]
+Pos=Top
+SELECT=Yes
+GRAPHIC=Yes
+LINE=No
+ELLIPSE=No
+RECT=No
+DIAM=No
+ARC=No
+PIE=No
+LEFTBRK=No
+RIGHTBRK=No
+BOTHBRK=No
+POLYCLOS=No
+SCALE=Yes
+CURSOR=Yes
+MEASUREH=Yes
+MEASUREV=Yes
+TAG=Yes
+TEXT=Yes
+PROPERTY=Yes
+START=Yes
+STOP=Yes
+PAUSE=Yes
+DATAPTS=Yes
+TOKENS=Yes
+RULER=Yes
+PLUS=Yes
+XAXIS=Yes
+YAXIS=Yes
+MINORLOG=Yes
+LOG25=Yes
+BASELINE=Yes
+HORIZCUR=Yes
+GOTOX=Yes
+GOTOY=Yes
+GOTOPERF=Yes
+GOTOBRNC=Yes
+NEXT=Yes
+NEXTIN=Yes
+PEAK=Yes
+VALLEY=Yes
+HIGH=Yes
+LOW=Yes
+INFLECTN=Yes
+GHIGH=Yes
+GLOW=Yes
+BOTTOM=Yes
+TOP=Yes
+AOUTPUT=Yes
+PKEY=Yes
+ENXSCALE=Yes
+ENYSCALE=Yes
+ZOOMIN=Yes
+ZOOMOUT=Yes
+COLOR=Yes
+FONT=Yes
+
+[Monte Carlo Options]
+Analysis=AC
+Status=Off
+Zero Tolerance=False
+Distribution=Normal
+Number of Runs=10
+Seed=0
+
+[Limits]
+Analysis=AC
+FRange=100,1
+NPts=51
+Temp=27
+MaxChng=5
+NInput=NONE
+NOutput=2
+Sweep type=Auto
+OPT=120
+StateVar=Zero
+RunOption=Normal
+Temperature Type=Linear
+
+[WaveForm]
+Analysis=AC
+Plt=1
+AliasID=1
+XExp=F
+YExp=v(V1)
+XRng=1e8,1e6
+YRng=-2000
+Options=LINEARY
+Range Grid X=1.98e7
+Range Grid Y=400
+DPS=Open Bubbles
+Line Color=12
+Text Color=12
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[Limits]
+Analysis=DynamicAC
+FirstValueDisplay=Mag
+SecondValueDisplay=PhaseDeg
+PlaceText=True
+
+[Limits]
+Analysis=DynamicDC
+PlaceText=True
+
+[Optimize]
+Format=3
+
+[Watch]
+Analysis=AC
+Format=3
+ExprPercentWidth=80

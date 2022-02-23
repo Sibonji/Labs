@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Logicly Desktop</title>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css" media="all">
+	<base target="_blank"/>
+</head>
+<body>
+	<div id="content">
+		<h1><a href="http://logic.ly/?utm_content=about-window"><img src="images/logicly_logo.png" alt="Logicly Desktop"/></a></h1>
+		<p id="version"></p>
+		<p>Copyright &copy; 2017 Bowler Hat LLC. All rights reserved.</p>
+		<p>Logicly simulates logic circuits and assists students in learning digital electronics. Keep students engaged with a simple and friendly UI that encourages experimentation and discovery.</p>
+		<ul id="about-links">
+			<li><a href="http://logic.ly/?utm_content=about-window">Learn More</a></li>
+			<li><a href="http://facebook.com/logicly/">Like Logicly on Facebook</a></li>
+			<li><a href="http://logic.ly/contact/?utm_content=about-window">Contact the Author</a></li>
+		</ul>
+		
+		<h2>Icon Credits</h2>
+		<p>A big thank you to the artists who created the following icon sets.</p>
+		<ul>
+			<li><p><a href="http://famfamfam.com/lab/icons/silk/">"Silk" icons</a> by Mark James</p></li>
+			<li><p><a href="http://p.yusukekamiyamane.com/">"Fugue" icons</a> by Yusuke Kamiyamane</p></li>
+		</ul>
+		<h2>Open Source Credits</h2>
+		<p>Many thanks to the authors and contributors from the following open source projects.</p>
+		<ul>
+			<li><p><a href="http://flex.apache.org/">Apache Flex</a></p></li>
+			<li><p><a href="http://www.robotlegs.org/">Robotlegs</a></p></li>
+			<li><p><a href="http://github.com/robertpenner/as3-signals">as3-signals</a></p></li>
+			<li><p><a href="https://github.com/mikechambers/as3corelib">as3corelib</a></p></li>
+			<li><p><a href="http://github.com/mrdoob/Hi-ReS-Stats">Hi-ReS! Stats</a></p></li>
+			<li><p><a href="http://github.com/joshtynjala/flexwires">flexwires</a></p></li>
+			<li><p><a href="http://github.com/joshtynjala/astra-flex">Astra Flex</a></p></li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" src="scripts/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript">
+		function getQueryString()
+		{
+			var result = {};
+			var queryString = location.search.substring(1);
+			var re = /([^&=]+)=([^&]*)/g, m;
+			
+			while(m = re.exec(queryString))
+			{
+				result[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+			}
+			
+			return result;
+		}
+		
+		var versionString = getQueryString().version;
+		if(versionString)
+		{
+			$("#version").text("Version " + versionString);
+		}
+		var utmSource = getQueryString().utmSource;
+		if(utmSource)
+		{
+			$("a").each(function()
+			{
+				var href = $(this).attr("href");
+				if(href.indexOf("utm_content") >= 0)
+				{
+					$(this).attr("href", href + "&utm_source=" + utmSource);
+				}
+			}); 
+		}
+	</script>
+</body>
+</html>

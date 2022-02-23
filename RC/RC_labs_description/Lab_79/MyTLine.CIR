@@ -1,0 +1,817 @@
+[Main]
+FileType=CIR
+Version=8.01
+Program=Micro-Cap
+Screen=1280,1024
+MCAPVersion=8.1.1.0
+Key ID=Demo
+NLCnt=18
+TXCnt=2
+
+[shapedef]
+Name=Pulse_Source
+Root="Vsource.root",0,-12,0
+Line=20,-4,20,0
+Line=20,0,26,0
+Line=26,0,26,4
+
+[shapedef]
+Name=Resistor
+Root="Resistor_Euro",0,-4,0
+
+[shapedef]
+Name=Capacitor
+Line=0,0,22,0
+Line=22,-8,22,8
+Line=26,-8,26,8
+Line=26,0,48,0
+Current=32,12,16,12
+
+[shapedef]
+Name=Lines
+Line=55,0,47,0
+Arc=0,-12,8,12 , 0,0,4,12
+Arc=0,-12,8,12 , 4,-12,0,0
+Arc=0,-12,8,12 , 4,12,8,0
+Arc=0,-12,8,12 , 8,0,4,-12
+Arc=40,-12,48,12 , 48,0,44,-12
+Arc=40,-12,48,12 , 44,12,48,0
+Line=4,0,-8,0
+Line=4,-12,44,-12
+Line=4,12,44,12
+Line=-8,48,4,48
+Line=4,12,4,48
+Line=44,12,44,48
+Line=44,48,56,48
+Current=-8,8,0,8
+Current=56,8,48,8
+
+[shapedef]
+Name=Ground
+Line=0,0,12,0
+Line=12,-8,12,8
+Line=18,-4,18,4
+Line=24,0,24,0
+
+[shapedef]
+Name=Vsource.root
+Line=0,0,12,0
+Line=36,0,48,0
+Ellipse=12,-12,36,12
+Line=7,5,7,9
+Root="Plus.root",39,5,0
+Current=32,16,16,16
+
+[shapedef]
+Name=Plus.root
+Line=-2,0,2,0
+Line=0,-2,0,2
+
+[shapedef]
+Name=Resistor_Euro
+Rectangle=12,-4,36,4
+Line=0,0,12,0
+Line=48,0,36,0
+Current=32,8,16,8
+
+[compdef]
+Name=TLine
+Definition=Tline
+Shape=Lines
+Mask=5632
+Label Offset=10,15,-8,12
+PinCnt=4
+Pin="A+",-1,0,-10,-5
+Pin="A-",-1,6,-11,18
+Pin="B+",7,0,0,-5
+Pin="B-",7,6,-6,18
+
+[compdef]
+Name=Resistor
+Definition=Resistor
+Shape=Resistor
+Mask=7937
+Label Offset=18,6,8,11
+PinCnt=2
+Pin="Plus",6,0,-10,-4
+Pin="Minus",0,0,-14,-4
+
+[compdef]
+Name=Pulse Source
+Definition=Pulse source
+Shape=Pulse_Source
+Mask=4865
+Label Offset=18,13,15,9
+PinCnt=2
+Pin="Plus",6,0,-5,-4
+Pin="Minus",0,0,-19,-4
+
+[compdef]
+Name=Ground
+Definition=Ground
+Shape=Ground
+Mask=1
+Label Offset=0,0,0,0
+PinCnt=1
+Pin="PinA",0,0,-32,8
+
+[compdef]
+Name=Capacitor
+Definition=Capacitor
+Shape=Capacitor
+Mask=6913
+Label Offset=19,8,12,12
+PinCnt=2
+Pin="Plus",6,0,-3,-5
+Pin="Minus",0,0,-14,-5
+
+[Circuit]
+Window Placement=2,3, -1,-1, -8,-30, 0,0,1001,603
+Default Object=Color=4
+Default Object Font=Height=-10,FStyle=0,Color=12,Name=Arial
+Default Object Apply Border To Text=No
+Default Object Apply Fill To Text=No
+WinBackGround Color=15
+Select Color=9
+Select Box Color=4
+Grid Text Color=Height=-20,FStyle=0,Color=1,Name=Arial
+Component Color=12
+Attribute Text=Height=-10,FStyle=0,Color=2,Name=Arial
+Wire Color=2
+Pin Connection=Height=-15,FStyle=0,Color=9,Name=Arial
+Node Number=Height=-12,FStyle=0,Color=13,Name=Arial
+Node Voltage Color=0
+Dynamic AC Voltage Color=56
+Text Banner Text=Height=-23,FStyle=0,Color=1,Name=Arial
+Title Block Background=7
+Current=Height=-17,FStyle=0,Color=12,Name=Arial
+Power/Condition=Height=-17,FStyle=0,Color=9,Name=Arial
+Digital Path Color=9
+Title Block=Height=-23,FStyle=0,Color=0,Name=Arial
+Digital 0 Color=0
+Digital R Color=11
+Digital F Color=11
+Digital 1 Color=9
+Digital X Color=7
+Digital Z Color=8
+Window Placement in Analysis=2,3, 0,855, -8,-30, 225,29,1230,636
+SpiceType=AMBIGUOUS
+Block Select Color=41
+TitleBlock Field_1=$name
+TitleBlock Field_2=$user $company
+TitleBlock Field_3
+TitleBlock Field_4=$date
+TitleBlock Field_5=Page $page of $maxpage
+TitleBlock One Title=False
+Title_Block_Border=False
+Title_Block=False
+
+[Comp]
+Name=TLine
+Grid=62,36
+Rot=6
+
+[Attr]
+ONV=-23,15,PART,T1
+Style=8192
+
+[Attr]
+ONV=-75,28,VALUE,Z0=50 TD=10n
+
+[Comp]
+Name=Resistor
+Grid=47,36
+Rot=6
+
+[Attr]
+ONV=-28,-20,PART,Rs
+Style=8192
+
+[Attr]
+ONV=-29,7,VALUE,50
+Style=8192
+
+[Comp]
+Name=Resistor
+Grid=72,42
+Rot=3
+
+[Attr]
+ONV=-21,-24,PART,Rl
+Style=8192
+
+[Attr]
+ONV=-20,-37,VALUE,50
+Style=8192
+
+[Comp]
+Name=Pulse Source
+Grid=41,42
+Rot=3
+
+[Attr]
+ONV=-28,-22,PART,Vs
+Style=8192
+
+[Attr]
+ONV=-49,-35,MODEL,PULSE
+
+[Comp]
+Name=Ground
+Grid=63,42
+Rot=1
+
+[Wire]
+Grids=63,42,72,42
+
+[Wire]
+Grids=41,42,54,42
+
+[Comp]
+Name=Ground
+Grid=54,42
+Rot=1
+
+[Wire]
+Grids=54,42,55,42
+
+[Comp]
+Name=Capacitor
+Grid=79,42
+Rot=3
+
+[Attr]
+ONV=-25,-25,PART,C1
+Style=8192
+
+[Attr]
+ONV=-36,-38,VALUE,0*100p
+Style=8192
+
+[Wire]
+Grids=79,36,82,36
+
+[Wire]
+Grids=82,36,83,36
+
+[Comp]
+Name=Resistor
+Grid=69,36
+Rot=2
+
+[Attr]
+ONV=-23,-18,PART,l
+Style=8192
+
+[Attr]
+ONV=-20,-37,VALUE,0
+
+[Comp]
+Name=Resistor
+Grid=55,36
+Rot=2
+
+[Attr]
+ONV=-25,-18,PART,s
+Style=8192
+
+[Attr]
+ONV=-20,-37,VALUE,0
+
+[Wire]
+Grids=69,36,72,36
+
+[Wire]
+Grids=72,36,79,36
+
+[Wire]
+Grids=72,42,79,42
+
+[Wire]
+Grids=47,36,49,36
+
+[Condition Offsets]
+
+[Grid Text]
+Text="u"
+Grid=82,36
+CBorder=NONE
+
+[Grid Text]
+Text="e"
+Grid=47,36
+CBorder=NONE
+
+[Schematic]
+Page 0=0
+TabSize 0=340
+Page 1=0
+TabSize 1=340
+Page 2=0
+TabSize 2=340
+Page 3=0
+TabSize 3=340
+Splitter.xs=0
+Splitter.ys=0
+TextQuad=4099
+Scale=1
+PrinterScale=1
+View=304
+GridType=Normal
+GridUser=10
+
+[Tools]
+Pos=Top
+SELECT=Yes
+COMP=Yes
+TEXT=Yes
+WIRE=Yes
+WIRED=Yes
+GRAPHIC=Yes
+LINE=No
+ELLIPSE=No
+RECT=No
+DIAM=No
+ARC=No
+PIE=No
+LEFTBRK=No
+RIGHTBRK=No
+BOTHBRK=No
+FLAG=Yes
+META=No
+INFO=Yes
+HELP=Yes
+DIGTRC=No
+DIGTRC2=No
+DIGALL=No
+GRIDTEXT=Yes
+COMPTEXT=Yes
+NODE=Yes
+NODEV=Yes
+CURRENT=Yes
+POWER=Yes
+CONDITIN=Yes
+PIN=Yes
+CROSS=Yes
+GRID=Yes
+BORDER=Yes
+TITLE=Yes
+RUBBER=Yes
+PROPERTY=Yes
+STEP=Yes
+MIRROR=Yes
+ROTATE=Yes
+FLIPY=Yes
+FILPX=Yes
+FINDCOMP=Yes
+FIND=Yes
+REPEAT=No
+MODEL=Yes
+CIR2CKT=No
+ATTDISP=No
+TOFRONT=Yes
+TOBACK=Yes
+PAGEADD=Yes
+PAGEDEL=Yes
+ZOOMIN=Yes
+ZOOMOUT=Yes
+GOTOFLAG=Yes
+COLOR=Yes
+FONT=Yes
+
+[Page]
+Index=0
+Print=True
+Name=Main
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Grid=72,39
+
+[Page]
+Index=1
+Type=Text
+Print=False
+Name=Text
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Grid=0,0
+
+[Page]
+Index=2
+Type=Text
+Print=False
+Name=Models
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Grid=0,0
+
+[Page]
+Index=3
+Type=Info
+Print=False
+Name=Info
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Grid=0,0
+
+[Text Area]
+Page=1
+Font=Height=-10,FStyle=0,Color=4,Name=Courier New
+Comment Color=8
+Background Color=15
+Len=0
+
+
+[Text Area]
+Page=2
+Font=Height=-10,FStyle=0,Color=4,Name=Courier New
+Comment Color=8
+Background Color=15
+Len=145
+*** From file C:\Program Files (x86)\Mc8Demo\LIBRARY\SMALL.LBR
+*** 5V Pulse Source
+.MODEL PULSE PUL (VONE=1 P1=0n P2=0.01n P3=10u P4=10u P5=1m)
+
+[Transient]
+Window Placement=2,3, 0,855, -8,-30, 225,29,1230,636
+Font=Height=-15,FStyle=0,Color=12,Name=Arial
+WinBackGround Color=15
+Select Color=9
+Select Box Color=4
+Title=circuit1.cir
+AutoTitle=Yes
+Grid Color=8
+Grid Weight=1
+Grid Pattern=Dot6
+Tracker Foreground=Height=-15,FStyle=0,Color=0,Name=Arial
+Tracker Background=11
+Baseline color=12
+Static Grids=False
+MinorLog25=Off
+LabelMinor=Off
+Graph Background=15
+Tracker Intercept=False
+Tracker Mouse=True
+Tracker Cursor=True
+Tracker Cursor BranchInfo=False
+Horizontal Cursor=False
+Same Y Scales=Yes
+Enable X Scaling=True
+Enable Y Scaling=True
+Keep X Scales The Same=False
+Number of Grids X=5
+Number of Grids Y=5
+Cursor Select Color Primary=7
+Cursor Select Color Secondary=9
+Data Point Labels Color Fore=Height=-15,FStyle=0,Color=0,Name=Arial
+Data Point Labels Color Back=11
+FFT_NPts="1024"
+FFT_IncludeDCHarmonic=False
+FFT_AutoScale_Harmonics="10"
+PrinterAutoTile=No
+PrinterBlackBorder=No
+MonMaxShow=8
+MonPlotWidth=21
+MonExprXWidth=142
+MonExprYWidth=260
+MonRangeXWidth=90
+MonRangeYWidth=90
+AnimateWait=0
+AnimateWaitTime=500
+Save_For_Future=No
+Reduce_Display=1
+Reduce_Save=1
+Num Out Header Left
+Num Out Header Center="$MC\n$user\n$company\n$Analysis of $name"
+Num Out Header Right
+Num Out Delimiter=32
+Num Out Write=True
+Num Out Write Models=True
+Num Out Write Zero Models=True
+Num Out Write Undefined Models=True
+Num Out Write Limits=True
+Num Out Write Values=True
+Num Out Write Operating Point=True
+Num Out Font=Height=-23,FStyle=0,Color=4,Name=Courier New
+
+[Tools]
+Pos=Top
+SELECT=Yes
+GRAPHIC=Yes
+LINE=No
+ELLIPSE=No
+RECT=No
+DIAM=No
+ARC=No
+PIE=No
+LEFTBRK=No
+RIGHTBRK=No
+BOTHBRK=No
+POLYCLOS=No
+SCALE=Yes
+CURSOR=Yes
+MEASUREH=Yes
+MEASUREV=Yes
+TAG=Yes
+TEXT=Yes
+PROPERTY=Yes
+START=Yes
+STOP=Yes
+PAUSE=Yes
+DATAPTS=Yes
+TOKENS=Yes
+RULER=Yes
+PLUS=Yes
+XAXIS=Yes
+YAXIS=Yes
+MINORLOG=Yes
+LOG25=Yes
+BASELINE=Yes
+HORIZCUR=Yes
+GOTOX=Yes
+GOTOY=Yes
+GOTOPERF=Yes
+GOTOBRNC=Yes
+NEXT=Yes
+NEXTIN=Yes
+PEAK=Yes
+VALLEY=Yes
+HIGH=Yes
+LOW=Yes
+INFLECTN=Yes
+GHIGH=Yes
+GLOW=Yes
+BOTTOM=Yes
+TOP=Yes
+AOUTPUT=Yes
+PKEY=Yes
+ENXSCALE=Yes
+ENYSCALE=Yes
+ZOOMIN=Yes
+ZOOMOUT=Yes
+COLOR=Yes
+FONT=Yes
+
+[AObject]
+Analysis=Transient
+Object=Text
+CBorder=NONE
+Pos=1073.667711598746,7594.33962264151,0,0
+Font=Height=-23,FStyle=0,Color=12,Name=Arial
+Text="B(0,t)"
+
+[AObject]
+Analysis=Transient
+Object=Text
+CBorder=NONE
+Pos=1065.830721003135,5636.792452830188,0,0
+Font=Height=-23,FStyle=0,Color=9,Name=Arial
+Text="B(l,t)"
+
+[AObject]
+Analysis=Transient
+Object=Text
+CBorder=NONE
+Pos=1081.504702194357,3702.830188679245,0,0
+Font=Height=-23,FStyle=0,Color=9,Name=Arial
+Text="A(l,t)"
+
+[AObject]
+Analysis=Transient
+Object=Text
+CBorder=NONE
+Pos=1065.830721003135,1792.452830188679,0,0
+Font=Height=-23,FStyle=0,Color=12,Name=Arial
+Text="À(0,t)"
+
+[Monte Carlo Options]
+Analysis=Transient
+Status=Off
+Zero Tolerance=False
+Distribution=Normal
+Number of Runs=10
+Seed=0
+
+[Limits]
+Analysis=Transient
+TRange=200n
+TStep=0.02n
+NPts=51
+Temp=27
+RetraceRuns=1
+OPT=120
+StateVar=Zero
+RunOption=Normal
+Temperature Type=Linear
+
+[WaveForm]
+Analysis=Transient
+Plt=1
+AliasID=2
+XExp=T
+YExp=(v(e)+50*I(s))/2
+XRng=200n,0
+YRng=1,0
+Options=LINEARX,LINEARY
+Range Grid X=10n
+Range Grid Y=0.5
+DPS=Open Bubbles
+CS=Normal
+Line Color=12
+Text Color=12
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[WaveForm]
+Analysis=Transient
+Plt=2
+AliasID=9
+XExp=T
+YExp=(v(u)+50*i(l))/2
+XRng=200n,0
+YRng=1,0
+Options=LINEARX,LINEARY
+Range Grid X=10n
+Range Grid Y=0.5
+DPS=Open Bubbles
+CS=Normal
+Line Color=9
+Text Color=9
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[WaveForm]
+Analysis=Transient
+Plt=3
+AliasID=10
+XExp=T
+YExp=(v(u)-50*i(l))/2
+XRng=200n,0
+YRng=1,0
+Options=LINEARX,LINEARY
+Range Grid X=10n
+Range Grid Y=0.5
+DPS=Filled Bubbles
+CS=Normal
+Line Color=9
+Text Color=9
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[WaveForm]
+Analysis=Transient
+Plt=4
+AliasID=7
+XExp=T
+YExp=(v(e)-50*I(s))/2
+XRng=200n,0
+YRng=1,0
+Options=LINEARX,LINEARY
+Range Grid X=10n
+Range Grid Y=0.5
+DPS=Open Bubbles
+CS=Normal
+Line Color=12
+Text Color=12
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[WaveForm]
+Analysis=Transient
+Plt=5
+AliasID=6
+XExp=T
+YExp=v(e)
+XRng=200n,0
+YRng=1,0
+Options=LINEARX,LINEARY
+Range Grid X=10n
+Range Grid Y=0.5
+CS=Normal
+Line Color=12
+Text Color=12
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[WaveForm]
+Analysis=Transient
+Plt=5
+AliasID=3
+XExp=T
+YExp=v(u)
+XRng=200n,0
+YRng=1,0
+Options=LINEARX,LINEARY
+Range Grid X=10n
+Range Grid Y=0.5
+CS=Normal
+Line Color=9
+Text Color=9
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[WaveForm]
+Analysis=Transient
+AliasID=4
+XExp=T
+YExp=50*i(s)
+XRng=200n,0
+YRng=1,0
+Options=LINEARX,LINEARY
+Range Grid X=10n
+Range Grid Y=0.5
+CS=Normal
+Line Color=2
+Text Color=2
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[WaveForm]
+Analysis=Transient
+AliasID=8
+XExp=T
+YExp=50*i(l)
+XRng=200n,0
+YRng=1,0
+Options=LINEARX,LINEARY
+Range Grid X=10n
+Range Grid Y=0.5
+CS=Normal
+Line Color=31
+Text Color=31
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[Limits]
+Analysis=DynamicAC
+FirstValueDisplay=Mag
+SecondValueDisplay=PhaseDeg
+PlaceText=True
+
+[Limits]
+Analysis=DynamicDC
+PlaceText=True
+
+[Optimize]
+Format=3
+
+[Watch]
+Analysis=Transient
+Format=3
+ExprPercentWidth=80

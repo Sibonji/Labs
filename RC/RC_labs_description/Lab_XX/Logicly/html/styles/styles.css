@@ -1,0 +1,94 @@
+html, body, ul, ol, li, p, div { margin:0px; padding:0px; } 
+
+body
+{
+	color: #dbdbdb;
+	font-family: Verdana,Tahoma,Arial,sans-serif;
+	text-align: center;
+}
+
+#content
+{
+	background: transparent url("../images/icon.png") 0px 20px no-repeat;
+	padding: 20px 0px 0px 220px;
+	width: 480px;
+	margin: auto;
+	font-size: 12px;
+	text-align: left;
+}
+
+a:link, a:visited
+{
+	color: #40a9ff;
+}
+
+a:active, a:hover
+{
+	color: #ffffff;
+}
+
+a img
+{
+	border: none;
+}
+
+h1
+{
+	margin: 0px;
+}
+
+h2
+{
+	margin-top: 2em;
+}
+
+p
+{
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+ul, ol
+{
+	padding-left: 2em;
+}
+
+ul
+{
+	list-style: square;
+}
+
+li p
+{
+	margin-bottom: 0em;
+}
+
+li
+{
+	margin-bottom: 0.5em;
+}
+
+#version
+{
+	margin-bottom: 0.2px;
+}
+
+#copyright
+{
+	margin-top: 0px;
+	margin-bottom: 2em;
+}
+
+#about-links
+{
+	margin-left: 0px;
+	padding-left: 0px;
+	list-style: none;
+}
+
+#about-links li
+{
+	display: inline;
+	margin-right: 1em;
+	list-style: none;
+}

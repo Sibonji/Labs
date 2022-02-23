@@ -1,0 +1,1129 @@
+[Main]
+FileType=CIR
+Version=8.01
+Program=Micro-Cap
+Screen=1280,1024
+MCAPVersion=8.1.1.0
+Key ID=Demo
+NLCnt=37
+TXCnt=12
+
+[shapedef]
+Name=Resistor
+Root="Resistor_Euro",0,-4,0
+
+[shapedef]
+Name=Capacitor
+Line=0,0,22,0
+Line=22,-8,22,8
+Line=26,-8,26,8
+Line=26,0,48,0
+Current=32,12,16,12
+
+[shapedef]
+Name=NFV
+Root="Vsource.root",0,-12,0
+Root="TextNv.Root",20,-6,0
+Root="TextFv.Root",20,1,0
+
+[shapedef]
+Name=Mul
+Root="Circle.root",0,-12,0
+Line=28,-4,36,4
+Line=28,4,36,-4
+
+[shapedef]
+Name=Ground
+Line=0,0,12,0
+Line=12,-8,12,8
+Line=18,-4,18,4
+Line=24,0,24,0
+
+[shapedef]
+Name=Circle.root
+Ellipse=20,-12,44,12
+Line=0,0,19,0
+Line=32,32,32,12
+Line=64,0,44,0
+PolyClosed=3 ,Solid
+PolyLine=13,-3
+PolyLine=18,0
+PolyLine=13,3
+PolyClosed=3 ,Solid
+PolyLine=32,14
+PolyLine=35,19
+PolyLine=29,19
+Line=18,0,20,0
+
+[shapedef]
+Name=Vsource.root
+Line=0,0,12,0
+Line=36,0,48,0
+Ellipse=12,-12,36,12
+Line=7,5,7,9
+Root="Plus.root",39,5,0
+Current=32,16,16,16
+
+[shapedef]
+Name=Plus.root
+Line=-2,0,2,0
+Line=0,-2,0,2
+
+[shapedef]
+Name=TextNv.Root
+Line=0,0,8,0
+Line=8,0,0,5
+Line=0,5,8,5
+
+[shapedef]
+Name=TextFv.Root
+Line=0,0,8,0
+Line=4,0,4,2
+Line=8,0,8,5
+
+[shapedef]
+Name=Resistor_Euro
+Rectangle=12,-4,36,4
+Line=0,0,12,0
+Line=48,0,36,0
+Current=32,8,16,8
+
+[shapedef]
+Name=Fixed
+Line=8,0,32,0
+Line=8,0,0,-8
+Line=8,0,0,8
+
+[compdef]
+Name=NFV
+Definition=NFV
+Shape=NFV
+Mask=4864
+Label Offset=18,12,16,13
+PinCnt=2
+Pin="Plus",6,0,-8,-4
+Pin="Minus",0,0,-21,-6
+
+[compdef]
+Name=Ground
+Definition=Ground
+Shape=Ground
+Mask=1793
+Label Offset=0,0,0,0
+PinCnt=1
+Pin="PinA",0,0,-32,8
+
+[compdef]
+Name=Mul
+Definition=Macro
+Shape=Mul
+Mask=4096
+Label Offset=47,3,15,18
+PinCnt=3
+Pin="PinA",a,0,0,-8,-3
+Pin="PinB",a,4,4,4,0
+Pin="PinC",a,8,0,-17,-2
+
+[compdef]
+Name=Resistor
+Definition=Resistor
+Shape=Resistor
+Mask=7425
+Label Offset=18,6,8,11
+PinCnt=2
+Pin="Plus",6,0,-10,-4
+Pin="Minus",0,0,-14,-4
+
+[compdef]
+Name=Capacitor
+Definition=Capacitor
+Shape=Capacitor
+Mask=6913
+Label Offset=19,8,12,12
+PinCnt=2
+Pin="Plus",6,0,-3,-5
+Pin="Minus",0,0,-14,-5
+
+[compdef]
+Name=Fixed Analog
+Definition=ANALOG STATE
+Shape=Fixed
+Mask=2048
+Label Offset=-14,-7,-6,-27
+PinCnt=1
+Pin="Out",4,0,-8,-3
+
+[Circuit]
+Window Placement=2,3, 0,857, -4,-30, 0,0,1056,594
+Default Object=Color=4
+Default Object Font=Height=-23,FStyle=0,Color=4,Name=Arial
+Default Object Apply Border To Text=No
+Default Object Apply Fill To Text=No
+WinBackGround Color=15
+Select Color=9
+Select Box Color=4
+Grid Text Color=Height=-20,FStyle=0,Color=1,Name=Arial
+Component Color=12
+Attribute Text=Height=-10,FStyle=0,Color=2,Name=Arial
+Wire Color=2
+Pin Connection=Height=-15,FStyle=0,Color=9,Name=Arial
+Node Number=Height=-12,FStyle=0,Color=13,Name=Arial
+Node Voltage Color=0
+Dynamic AC Voltage Color=56
+Text Banner Text=Height=-23,FStyle=0,Color=1,Name=Arial
+Title Block Background=7
+Current=Height=-17,FStyle=0,Color=12,Name=Arial
+Power/Condition=Height=-17,FStyle=0,Color=9,Name=Arial
+Digital Path Color=9
+Title Block=Height=-23,FStyle=0,Color=0,Name=Arial
+Digital 0 Color=0
+Digital R Color=11
+Digital F Color=11
+Digital 1 Color=9
+Digital X Color=7
+Digital Z Color=8
+Window Placement in Analysis=2,3, -1,-1, -4,-30, 0,0,638,789
+SpiceType=AMBIGUOUS
+Block Select Color=41
+TitleBlock Field_1=$name
+TitleBlock Field_2=$user $company
+TitleBlock Field_3
+TitleBlock Field_4=$date
+TitleBlock Field_5=Page $page of $maxpage
+TitleBlock One Title=False
+Title_Block_Border=False
+Title_Block=False
+
+[Comp]
+Name=NFV
+Grid=14,16
+
+[Attr]
+ONV=13,-29,PART,E1-3
+Style=8192
+
+[Attr]
+ONV=-160,-39,VALUE,((t>0)&(t<3))
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=NFV
+Grid=26,16
+Rot=2
+
+[Attr]
+ONV=-38,-28,PART,E3-5
+Style=8192
+
+[Attr]
+ONV=-160,-39,VALUE,((t>3)&(t<5))
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=NFV
+Grid=32,16
+
+[Attr]
+ONV=14,-29,PART,E6-7
+Style=8192
+
+[Attr]
+ONV=-160,-39,VALUE,((t>6)&(t<7))
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=NFV
+Grid=50,16
+Rot=2
+
+[Attr]
+ONV=-33,-28,PART,E8-9
+Style=8192
+
+[Attr]
+ONV=-160,-39,VALUE,((t>8)&(t<9))
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=NFV
+Grid=50,16
+
+[Attr]
+ONV=14,-29,PART,E9-10
+Style=8192
+
+[Attr]
+ONV=-160,-39,VALUE,((t>9)&(t<10))
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=NFV
+Grid=62,16
+Rot=2
+
+[Attr]
+ONV=-42,-29,PART,E10-11
+Style=8192
+
+[Attr]
+ONV=-160,-39,VALUE,((t>10)&(t<11))
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=Ground
+Grid=14,16
+Rot=7
+
+[Comp]
+Name=Mul
+Grid=62,16
+
+[Attr]
+ONV=47,3,PART,X1
+Style=8192
+
+[Attr]
+ONV=47,16,FILE,Mul
+
+[Attr]
+ONV=47,29,Param:SCALE,1.0
+
+[Comp]
+Name=NFV
+Grid=66,26
+Rot=3
+
+[Attr]
+ONV=17,-30,PART,PULSE
+Style=8192
+
+[Attr]
+ONV=-22,-39,VALUE,v(r)
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=Ground
+Grid=66,26
+Rot=7
+
+[Wire]
+Grids=70,16,71,16
+
+[Comp]
+Name=NFV
+Grid=23,56
+Rot=3
+
+[Attr]
+ONV=17,-38,PART,tm
+Style=8192
+
+[Attr]
+ONV=-96,-39,VALUE,(t mod 1)
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=Ground
+Grid=23,56
+Rot=7
+
+[Comp]
+Name=NFV
+Grid=48,44
+Rot=3
+
+[Attr]
+ONV=-30,-47,PART,PS
+Style=8192
+
+[Attr]
+ONV=-96,-39,VALUE,sqrt(2)*sin(pi*v(tm))
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=Ground
+Grid=48,44
+Rot=7
+
+[Wire]
+Grids=15,32,72,32
+
+[Wire]
+Grids=72,32,72,62
+
+[Wire]
+Grids=15,62,72,62
+
+[Wire]
+Grids=15,32,15,62
+
+[Comp]
+Name=NFV
+Grid=36,50
+Rot=3
+
+[Attr]
+ONV=-29,-26,PART,LO
+Style=8192
+
+[Attr]
+ONV=-56,-39,VALUE,v(tm) >= 0.5
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=NFV
+Grid=36,38
+Rot=1
+
+[Attr]
+ONV=-28,17,PART,HI
+Style=8192
+
+[Attr]
+ONV=-56,-39,VALUE,v(tm)<0.5
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=Ground
+Grid=36,50
+Rot=7
+
+[Comp]
+Name=NFV
+Grid=62,44
+Rot=3
+
+[Attr]
+ONV=-28,-36,PART,PC
+Style=8192
+
+[Attr]
+ONV=-96,-39,VALUE,sqrt(2/3)*(1-cos(2*pi*v(tm)))
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=Ground
+Grid=62,44
+Rot=7
+
+[Comp]
+Name=NFV
+Grid=44,16
+Rot=2
+
+[Attr]
+ONV=-32,-28,PART,E7-8
+Style=8192
+
+[Attr]
+ONV=-160,-39,VALUE,((t>7)&(t<8))
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=NFV
+Grid=32,16
+Rot=2
+
+[Attr]
+ONV=-38,-28,PART,E5-6
+Style=8192
+
+[Attr]
+ONV=-160,-39,VALUE,((t>5)&(t<6))
+
+[Attr]
+ONV=-50,-52,DERIVATIVE,Default
+
+[Comp]
+Name=Resistor
+Grid=82,16
+Rot=6
+
+[Attr]
+ONV=-33,-22,PART,R1
+Style=8192
+
+[Attr]
+ONV=-35,-36,VALUE,200
+Style=8192
+
+[Comp]
+Name=Capacitor
+Grid=82,22
+Rot=3
+
+[Attr]
+ONV=-25,-25,PART,C1
+Style=8192
+
+[Attr]
+ONV=-27,-38,VALUE,1m
+Style=8192
+
+[Comp]
+Name=Ground
+Grid=82,22
+Rot=7
+
+[Wire]
+Grids=82,16,85,16
+
+[Wire]
+Grids=71,9,71,16
+
+[Wire]
+Grids=71,16,76,16
+
+[Wire]
+Grids=71,9,85,9
+
+[Wire]
+Grids=85,16,87,16
+
+[Wire]
+Grids=85,9,86,9
+
+[Comp]
+Name=Fixed Analog
+Grid=79,30
+
+[Attr]
+ONV=-14,-7,PART,XF
+
+[Attr]
+ONV=21,26,VALUE,0.1
+Style=8192
+
+[Comp]
+Name=Fixed Analog
+Grid=23,42
+Rot=3
+
+[Attr]
+ONV=-14,-7,PART,V1
+
+[Attr]
+ONV=-5,3,VALUE,1
+Style=8192
+
+[Condition Offsets]
+
+[Grid Text]
+Text="XF="
+Grid=78,35
+Height=-13
+CBorder=NONE
+
+[Grid Text]
+Text="PSPF"
+Grid=85,16
+Height=-13
+CBorder=NONE
+
+[Grid Text]
+Text="Выбор формыюогибающей"
+Grid=51,25
+Height=-12
+CBorder=NONE
+
+[Grid Text]
+Text="PSP"
+Grid=85,9
+Height=-13
+CBorder=NONE
+
+[Grid Text]
+Text="Прямоугольник"
+Grid=22,34
+Height=-10
+CBorder=NONE
+
+[Grid Text]
+Text="r"
+Grid=23,38
+CBorder=NONE
+
+[Grid Text]
+Text="Гармоническаяю   полуволна"
+Grid=48,36
+Height=-10
+CBorder=NONE
+
+[Grid Text]
+Text="s"
+Grid=48,38
+CBorder=NONE
+
+[Grid Text]
+Text="Импульсюманчестера"
+Grid=36,36
+Height=-10
+CBorder=NONE
+
+[Grid Text]
+Text="m"
+Grid=36,38
+CBorder=NONE
+
+[Grid Text]
+Text="Приподнятыйю    косинус"
+Grid=61,36
+Height=-10
+CBorder=NONE
+
+[Grid Text]
+Text="c"
+Grid=62,38
+CBorder=NONE
+
+[Schematic]
+Page 0=0
+TabSize 0=340
+Page 1=0
+TabSize 1=340
+Page 2=0
+TabSize 2=340
+Page 3=0
+TabSize 3=340
+Splitter.xs=0
+Splitter.ys=0
+TextQuad=4099
+Scale=0.6666666666666666
+PrinterScale=1
+View=304
+GridType=Normal
+GridUser=10
+
+[Tools]
+Pos=Top
+SELECT=Yes
+COMP=Yes
+TEXT=Yes
+WIRE=Yes
+WIRED=Yes
+GRAPHIC=Yes
+LINE=No
+ELLIPSE=No
+RECT=No
+DIAM=No
+ARC=No
+PIE=No
+LEFTBRK=No
+RIGHTBRK=No
+BOTHBRK=No
+FLAG=Yes
+META=No
+INFO=Yes
+HELP=Yes
+DIGTRC=No
+DIGTRC2=No
+DIGALL=No
+GRIDTEXT=Yes
+COMPTEXT=Yes
+NODE=Yes
+NODEV=Yes
+CURRENT=Yes
+POWER=Yes
+CONDITIN=Yes
+PIN=Yes
+CROSS=Yes
+GRID=Yes
+BORDER=Yes
+TITLE=Yes
+RUBBER=Yes
+PROPERTY=Yes
+STEP=Yes
+MIRROR=Yes
+ROTATE=Yes
+FLIPY=Yes
+FILPX=Yes
+FINDCOMP=Yes
+FIND=Yes
+REPEAT=No
+MODEL=Yes
+CIR2CKT=No
+ATTDISP=No
+TOFRONT=Yes
+TOBACK=Yes
+PAGEADD=Yes
+PAGEDEL=Yes
+ZOOMIN=Yes
+ZOOMOUT=Yes
+GOTOFLAG=Yes
+COLOR=Yes
+FONT=Yes
+
+[Page]
+Index=0
+Print=True
+Name=Main
+Scale 0=1
+Scale 1=1
+Scale 2=1
+SB 3=0,1
+Scale 3=0.6666666666666666
+Grid=80,34
+
+[Page]
+Index=1
+Type=Text
+Print=False
+Name=Text
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Grid=0,0
+
+[Page]
+Index=2
+Type=Text
+Print=False
+Name=Models
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Grid=0,0
+
+[Page]
+Index=3
+Type=Info
+Print=False
+Name=Info
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Grid=0,0
+
+[Text Area]
+Page=1
+Font=Height=-10,FStyle=0,Color=4,Name=Courier New
+Comment Color=8
+Background Color=15
+Len=0
+
+
+[Text Area]
+Page=2
+Font=Height=-10,FStyle=0,Color=4,Name=Courier New
+Comment Color=8
+Background Color=15
+Len=0
+
+
+[Transient]
+Window Placement=2,3, -1,-1, -4,-30, 0,0,638,789
+Font=Height=-15,FStyle=0,Color=12,Name=Arial
+WinBackGround Color=15
+Select Color=9
+Select Box Color=4
+Title=barker.CIR
+AutoTitle=Yes
+Grid Color=8
+Grid Weight=1
+Grid Pattern=Dot6
+Tracker Foreground=Height=-15,FStyle=0,Color=0,Name=Arial
+Tracker Background=11
+Baseline color=12
+Static Grids=False
+MinorLog25=Off
+LabelMinor=Off
+Graph Background=15
+Tracker Intercept=False
+Tracker Mouse=True
+Tracker Cursor=True
+Tracker Cursor BranchInfo=False
+Horizontal Cursor=False
+Same Y Scales=Yes
+Enable X Scaling=True
+Enable Y Scaling=True
+Keep X Scales The Same=False
+Number of Grids X=5
+Number of Grids Y=5
+Cursor Select Color Primary=7
+Cursor Select Color Secondary=9
+Data Point Labels Color Fore=Height=-15,FStyle=0,Color=0,Name=Arial
+Data Point Labels Color Back=11
+FFT_Max="30"
+FFT_Min="0"
+FFT_NPts="1024"
+FFT_IncludeDCHarmonic=True
+FFT_AutoScale_Harmonics="10"
+PrinterAutoTile=No
+PrinterBlackBorder=No
+MonMaxShow=3
+MonPlotWidth=21
+MonExprXWidth=142
+MonExprYWidth=260
+MonRangeXWidth=90
+MonRangeYWidth=90
+AnimateWait=0
+AnimateWaitTime=500
+Save_For_Future=No
+Reduce_Display=1
+Reduce_Save=1
+Num Out Header Left
+Num Out Header Center="$MC\n$user\n$company\n$Analysis of $name"
+Num Out Header Right
+Num Out Delimiter=32
+Num Out Write=True
+Num Out Write Models=True
+Num Out Write Zero Models=True
+Num Out Write Undefined Models=True
+Num Out Write Limits=True
+Num Out Write Values=True
+Num Out Write Operating Point=True
+Num Out Font=Height=-23,FStyle=0,Color=4,Name=Courier New
+
+[Tools]
+Pos=Top
+SELECT=Yes
+GRAPHIC=Yes
+LINE=No
+ELLIPSE=No
+RECT=No
+DIAM=No
+ARC=No
+PIE=No
+LEFTBRK=No
+RIGHTBRK=No
+BOTHBRK=No
+POLYCLOS=No
+SCALE=Yes
+CURSOR=Yes
+MEASUREH=Yes
+MEASUREV=Yes
+TAG=Yes
+TEXT=Yes
+PROPERTY=Yes
+START=Yes
+STOP=Yes
+PAUSE=Yes
+DATAPTS=Yes
+TOKENS=Yes
+RULER=Yes
+PLUS=Yes
+XAXIS=Yes
+YAXIS=Yes
+MINORLOG=Yes
+LOG25=Yes
+BASELINE=Yes
+HORIZCUR=Yes
+GOTOX=Yes
+GOTOY=Yes
+GOTOPERF=Yes
+GOTOBRNC=Yes
+NEXT=Yes
+NEXTIN=Yes
+PEAK=Yes
+VALLEY=Yes
+HIGH=Yes
+LOW=Yes
+INFLECTN=Yes
+GHIGH=Yes
+GLOW=Yes
+BOTTOM=Yes
+TOP=Yes
+AOUTPUT=Yes
+PKEY=Yes
+ENXSCALE=Yes
+ENYSCALE=Yes
+ZOOMIN=Yes
+ZOOMOUT=Yes
+COLOR=Yes
+FONT=Yes
+
+[AC]
+Window Placement=2,3, -1,-1, -4,-30, 66,87,1126,685
+Font=Height=-15,FStyle=0,Color=12,Name=Arial
+WinBackGround Color=15
+Select Color=9
+Select Box Color=4
+Title
+AutoTitle=Yes
+Grid Color=8
+Grid Weight=1
+Grid Pattern=Dot6
+Tracker Foreground=Height=-15,FStyle=0,Color=0,Name=Arial
+Tracker Background=11
+Baseline color=12
+Static Grids=False
+MinorLog25=Off
+LabelMinor=Off
+Graph Background=15
+Tracker Intercept=False
+Tracker Mouse=True
+Tracker Cursor=True
+Tracker Cursor BranchInfo=False
+Horizontal Cursor=False
+Same Y Scales=Yes
+Enable X Scaling=True
+Enable Y Scaling=True
+Keep X Scales The Same=False
+Number of Grids X=5
+Number of Grids Y=5
+Cursor Select Color Primary=7
+Cursor Select Color Secondary=9
+Data Point Labels Color Fore=Height=-15,FStyle=0,Color=0,Name=Arial
+Data Point Labels Color Back=11
+FFT_NPts="1024"
+FFT_IncludeDCHarmonic=False
+FFT_AutoScale_Harmonics="10"
+PrinterAutoTile=No
+PrinterBlackBorder=No
+MonMaxShow=3
+MonPlotWidth=21
+MonExprXWidth=142
+MonExprYWidth=260
+MonRangeXWidth=90
+MonRangeYWidth=90
+AnimateWait=0
+AnimateWaitTime=500
+Save_For_Future=No
+Reduce_Display=1
+Reduce_Save=1
+Num Out Header Left
+Num Out Header Center="$MC\n$user\n$company\n$Analysis of $name"
+Num Out Header Right
+Num Out Delimiter=32
+Num Out Write=True
+Num Out Write Models=True
+Num Out Write Zero Models=True
+Num Out Write Undefined Models=True
+Num Out Write Limits=True
+Num Out Write Values=True
+Num Out Write Operating Point=True
+Num Out Font=Height=-23,FStyle=0,Color=4,Name=Courier New
+
+[Monte Carlo Options]
+Analysis=Transient
+Status=Off
+Zero Tolerance=False
+Distribution=Normal
+Number of Runs=10
+Seed=0
+
+[Monte Carlo Options]
+Analysis=AC
+Status=Off
+Zero Tolerance=False
+Distribution=Normal
+Number of Runs=10
+Seed=0
+
+[Limits]
+Analysis=Transient
+TRange=30
+TStep=0.01
+NPts=51
+Temp=27
+RetraceRuns=1
+OPT=120
+StateVar=Zero
+RunOption=Normal
+Temperature Type=Linear
+
+[WaveForm]
+Analysis=Transient
+Plt=1
+AliasID=1
+XExp=T
+YExp=v(PSP)
+XRng=15,0
+YRng=+1.8,-1.8
+Options=LINEARX,LINEARY
+Range Grid X=1
+Range Grid Y=0.5
+DPS=Filled Bubbles
+CS=Normal
+Line Color=12
+Text Color=12
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[WaveForm]
+Analysis=Transient
+Plt=2
+AliasID=2
+XExp=T
+YExp=RE(AC(v(PSP)))
+XRng=30,0
+YRng=11,-4
+Options=LINEARX,LINEARY
+Range Grid X=1
+Range Grid Y=1
+DPS=Open Bubbles
+CS=Normal
+Line Color=9
+Text Color=9
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[WaveForm]
+Analysis=Transient
+Plt=3
+AliasID=4
+XExp=F
+YExp=MAG(FFT(v(PSP)))
+XRng=4,0
+YRng=150,0
+Options=LINEARX,LINEARY
+Range Grid X=1
+Range Grid Y=50
+CS=Normal
+Line Color=47
+Text Color=47
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[Limits]
+Analysis=AC
+FRange=1E8,1Meg
+NPts=51
+Temp=27
+MaxChng=5
+NInput=NONE
+NOutput=2
+Sweep type=Auto
+OPT=120
+StateVar=Zero
+RunOption=Normal
+Temperature Type=Linear
+
+[WaveForm]
+Analysis=AC
+Plt=1
+AliasID=1
+XExp=F
+YExp=db(v(E))
+XRng=Auto
+YRng=Auto
+Options=LINEARY
+DPS=Open Bubbles
+Line Color=12
+Text Color=12
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[WaveForm]
+Analysis=AC
+Plt=2
+AliasID=2
+XExp=F
+YExp=ph(v(E))
+XRng=Auto
+YRng=Auto
+Options=LINEARY
+DPS=Open Bubbles
+Line Color=9
+Text Color=9
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[WaveForm]
+Analysis=AC
+AliasID=-1
+Options=LINEARY
+DPS=Filled Bubbles
+CS=Popsicle
+Line Color=37
+Text Color=11
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=3
+SFmtY=3
+
+[Limits]
+Analysis=DynamicAC
+FirstValueDisplay=Mag
+SecondValueDisplay=PhaseDeg
+PlaceText=True
+
+[Limits]
+Analysis=DynamicDC
+PlaceText=True
+
+[Stepping]
+Analysis=Transient
+Index=1
+Parameter Type=Component
+Name=R1
+Param=Value
+From=0
+To=1000
+Value=200
+
+[Optimize]
+Format=3
+
+[Watch]
+Analysis=Transient
+Format=3
+ExprPercentWidth=80
+
+[Watch]
+Analysis=AC
+Format=3
+ExprPercentWidth=80
