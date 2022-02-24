@@ -127,9 +127,9 @@
 \hline 
 $\omega$ & ФНЧ & ФВЧ & Полосовой & Режекторный \\ 
 \hline 
-0 & 0 & $-\pi/2$ & $-\pi/2$ & 0 \\ 
+0 & 0 & $-\pi/2$ & $3\pi/2$ & 0 \\ 
 \hline 
-$\infty$ & $-3\pi/2$ & $-2\pi$ & $\pi/2$ & $-2\pi$ \\ 
+$\infty$ & $-3\pi/2$ & $-2\pi$ & $-3\pi/2$ & 0 \\ 
 \hline 
 \end{tabular}
 \end{center} 
@@ -154,18 +154,18 @@ $K(f_0)$ & -6 & -9 & -24,2 & -66 \\
 
 \[\bigtriangleup f = 49\: k\]
 
-\[K(f_0 - 2\bigtriangleup f) = -25 \: dB, \quad K(f_0 + 2\bigtriangleup f) = -20,8 \: dB\]
+\[K(f_0 - 2\bigtriangleup f) = -19 \: dB, \quad K(f_0 + 2\bigtriangleup f) = -16 \: dB\]
 
-\[K(f_0 - 10\bigtriangleup f) = -75,7 \: dB, \quad K(f_0 + 10\bigtriangleup f) = -60,8 \: dB\]
+\[K(f_0 - 10\bigtriangleup f) = -69,7 \: dB, \quad K(f_0 + 10\bigtriangleup f) = -55 \: dB\]
 
-\item По логарифмической частотной характеристике режекторного фильтра в диапазоне частот $1500k.500k$ измерим ширины полос по уровням $-3dB, -43dB, -63dB$:
+\item По логарифмической частотной характеристике режекторного фильтра в диапазоне частот $1500,500k$ измерим ширины полос по уровням $-3dB, -43dB, -63dB$:
 
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline 
 $K(f_0 \pm \bigtriangleup f), \: dB$ & $-3$ & $-43$ & $-63$ \\ 
 \hline 
-$2\bigtriangleup f$ & 98k & 41k & 9k \\ 
+$2\bigtriangleup f$ & 50k & 10k & 4,5k \\ 
 \hline 
 \end{tabular} 
 \end{center}
@@ -193,6 +193,24 @@ $K(10f_0), \: dB$ & -60.02 & -80.03 & -100.03 & -120.03 & -140.03 \\
 \end{center}
 
 \item Повторим те же исследования для фильтров Чебышева с неравномерностями 0.5 dB (файл cheb0-5.cir) и 3 dB (файл cheb3-0.cir)
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Чебышева 0.5 dB & n=3 & n=4 & n=5 & n=6 & n=7 \\ 
+\hline 
+$K(f_0), \: dB$ & • & • & • & • & • \\ 
+\hline 
+$K(2f_0), \: dB$ & • & • & • & • & • \\ 
+\hline 
+Чебышева 3.0 dB & • & • & • & • & • \\ 
+\hline 
+$K(f_0), \: dB$ & • & • & • & • & • \\ 
+\hline 
+$K(2f_0), \: dB$ & • & • & • & • & • \\ 
+\hline 
+\end{tabular} 
+\end{center}
 
 \end{enumerate}
 
