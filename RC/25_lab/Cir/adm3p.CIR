@@ -171,7 +171,7 @@ Pin="Plus",6,0,-5,-4
 Pin="Minus",0,0,-19,-4
 
 [Circuit]
-Window Placement=2,3, -1,-1, -8,-31, 0,0,1001,569
+Window Placement=2,3, -1,-1, -8,-31, 0,0,949,569
 Default Object=Color=#000080
 Default Object Font=Height=-23,FStyle=0,Color=#000080,Name=Arial
 Default Object Apply Border To Text=No
@@ -1681,11 +1681,11 @@ NOFmtY=3
 
 [Limits]
 Analysis=AC
-FRange=3Meg,0
+FRange=1500k,500k
 NPts=1000
 Temp=27
 MaxChng=5
-NInput=NONE
+NInput=None
 NOutput=2
 Sweep type=Linear
 StateVar=Zero
@@ -1699,12 +1699,12 @@ Plt=1
 AliasID=1
 XExp=F
 YExp=v(l)
-XRng=3e6
+XRng=1e6,100000
 YRng=0.75
 Options=LINEARX,LINEARY
-Range Grid X=600000
+Range Grid X=180000
 Range Grid Y=0.15
-Enable=Enable
+Enable=Hide
 DPS=Open Bubbles
 CS=Normal
 Line Color=#0000FF
@@ -1726,12 +1726,12 @@ Analysis=AC
 Plt=2
 AliasID=7
 XExp=F
-YExp=db(v(l))
-XRng=3e6
-YRng=10,-40
-Options=LINEARX,LINEARY
-Range Grid X=600000
-Range Grid Y=10
+YExp=db(v(r))
+XRng=1.5e6,500000
+YRng=40,-160
+Options=OUTPUT,LINEARX,LINEARY
+Range Grid X=200000
+Range Grid Y=40
 Enable=Enable
 DPS=Open Bubbles
 CS=Normal
@@ -1756,11 +1756,11 @@ AliasID=8
 XExp=F
 YExp=4*v(l)^2
 XRng=3e6
-YRng=1.25
+YRng=2
 Options=LINEARX,LINEARY
 Range Grid X=600000
-Range Grid Y=0.25
-Enable=Enable
+Range Grid Y=0.4
+Enable=Hide
 DPS=Filled Bubbles
 CS=Normal
 Line Color=#F86100
@@ -1782,13 +1782,13 @@ Analysis=AC
 Plt=4
 AliasID=3
 XExp=F
-YExp=ph(v(h))/90
-XRng=3e6
-YRng=0,-3.75
+YExp=ph(v(b))/90
+XRng=1e7
+YRng=2,-8
 Options=LINEARX,LINEARY
-Range Grid X=600000
-Range Grid Y=0.75
-Enable=Enable
+Range Grid X=2e6
+Range Grid Y=2
+Enable=Hide
 DPS=Open Bubbles
 CS=Normal
 Line Color=#006200
@@ -1941,6 +1941,16 @@ Analysis=HmDistortion
 
 [Pane]
 Analysis=ImDistortion
+
+[Stepping]
+Analysis=AC
+Index=1
+Parameter Type=Component
+Name=RLL
+Param=value
+From=25
+To=75
+Value=25
 
 [Watch]
 Analysis=Transient
