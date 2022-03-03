@@ -1,0 +1,155 @@
+SciDAVis 2.3.0 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+2669
+<table creation_time="2022-03-03 00:51:00:000" caption_spec="%n%C{ - }%c" name="Table1" columns="2" rows="30"><comment><![CDATA[]]></comment><column creation_time="2022-03-03 00:51:46:855" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2022-03-03 00:51:46:855" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2022-03-03 00:51:46:855" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0469999999999999e+02</row><row type="TypeDouble" index="1" invalid="no">4.3580000000000001e+02</row><row type="TypeDouble" index="2" invalid="no">4.9160000000000002e+02</row><row type="TypeDouble" index="3" invalid="no">5.4610000000000002e+02</row><row type="TypeDouble" index="4" invalid="no">5.7700000000000000e+02</row><row type="TypeDouble" index="5" invalid="no">5.7910000000000002e+02</row><row type="TypeDouble" index="6" invalid="no">6.2339999999999998e+02</row><row type="TypeDouble" index="7" invalid="no">6.9070000000000005e+02</row></column><column creation_time="2022-03-03 00:51:46:863" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2022-03-03 00:51:46:863" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2022-03-03 00:51:46:863" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.7029000000000001e+00</row><row type="TypeDouble" index="1" invalid="no">1.6933000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">1.6814000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">1.6742999999999999e+00</row><row type="TypeDouble" index="4" invalid="no">1.6711000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">1.6708000000000001e+00</row><row type="TypeDouble" index="6" invalid="no">1.6671000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">1.6627000000000001e+00</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width></table>
+geometry	0	-16	715	756	
+
+</table>
+<multiLayer>
+График1	1	1	03.03.2022 0:55
+geometry	715	-16	1133	765	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	404	238
+Alignement	0	0
+<graph>
+ggeometry	8	9	1113	700
+PlotTitle	Дисперсионная кривая	#ff000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffffff	255
+Margin	0
+Border	0	#ff000000
+grid	1	1	1	1	#ff0000ff	0	0	#ffa0a0a4	2	0	#ff0000ff	0	0	#ffa0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	λ, нм	n			
+AxesTitleColors	#ff000000	#ff000000	#ff000000	#ff000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	MS Shell Dlg 2	21	75	0	0	0
+ScaleFont0	MS Shell Dlg 2	17	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	17	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	17	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	17	75	0	0	0
+AxisFont0	MS Shell Dlg 2	17	50	0	0	0
+AxisFont1	MS Shell Dlg 2	17	50	0	0	0
+AxisFont2	MS Shell Dlg 2	17	50	0	0	0
+AxisFont3	MS Shell Dlg 2	17	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesNumberColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffffff	255
+curve	Table1_1	Table1_2	1	0	#ff000000	0	1	7	1	#ff000000	#ff000000	0	#ff000000	14	1	0	64		2	0	0	29	1
+FunctionCurve	0,PolyПриближение1,x,579.1,623.4	100			0	1	#ffff0000	0	1	0	0	#ff000000	#ffa0a0a4	0	#ff000000	14	1	0	64		2	0	86961504	5568	1
+<formula>
+a0=1.71916726862302
+a1=-8.35214446952566e-05
+
+a0+a1*x
+
+</formula>
+FunctionCurve	0,PolyПриближение2,x,435.8,491.6	100			0	1	#ff0000ff	0	1	0	0	#ff000000	#ffa0a0a4	0	#ff000000	14	1	0	64		2	0	147678808	0	1
+<formula>
+a0=1.7862394265233
+a1=-0.000213261648745519
+
+a0+a1*x
+
+</formula>
+FunctionCurve	0,PolyПриближение3,x,623.4,690.7	100			0	1	#ff00ff00	0	1	0	0	#ff000000	#ffa0a0a4	0	#ff000000	14	1	0	64		2	0	147683368	0	1
+<formula>
+a0=1.70785720653789
+a1=-6.53789004457629e-05
+
+a0+a1*x
+
+</formula>
+scale	0	1.66	1.71	0	8	5	0	0
+scale	1	1.66	1.71	0	8	5	0	0
+scale	2	400	700	0	8	5	0	0
+scale	3	400	700	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	600.994035785288	1.70889830508475	MS Shell Dlg 2	17	50	0	0	0	#ff000000	1	0	#00ffffff	0	\c{2}График для n<sub>D</sub>	\c{3}График для n<sub>F</sub>	\c{4}График для n<sub>C</sub></legend>
+</graph>
+</multiLayer>
+<log>
+[03.03.2022 1:08	Plot: ''График1'']
+Полиномиальный приближение по набору данных: Table1_2, используя функцию: a0+a1*x
+Ошибки погрешности Y: Неизвестный
+От значения по x = 579,1 до значения по x = 623,4
+a0  = 1,71916726862302 +/- nan
+a1  = -8,35214446952566e-05 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = 0
+R^2 = 1
+---------------------------------------------------------------------------------------
+[03.03.2022 1:08	Plot: ''График1'']
+Полиномиальный приближение по набору данных: Table1_2, используя функцию: a0+a1*x
+Ошибки погрешности Y: Неизвестный
+От значения по x = 435,8 до значения по x = 491,6
+a0  = 1,7862394265233 +/- nan
+a1  = -0,000213261648745519 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = 0
+R^2 = 1
+---------------------------------------------------------------------------------------
+[03.03.2022 1:09	Plot: ''График1'']
+Полиномиальный приближение по набору данных: Table1_2, используя функцию: a0+a1*x
+Ошибки погрешности Y: Неизвестный
+От значения по x = 404,7 до значения по x = 579,1
+a0  = 1,77097684163793 +/- 0,00781702685865486
+a1  = -0,000175348861295047 +/- 1,53211956753709e-05
+--------------------------------------------------------------------------------------
+Chi^2 = 2,57172843241237e-05
+R^2 = 0,97036701273924
+---------------------------------------------------------------------------------------
+[03.03.2022 1:10	Plot: ''График1'']
+Полиномиальный приближение по набору данных: Table1_2, используя функцию: a0+a1*x
+Ошибки погрешности Y: Неизвестный
+От значения по x = 579,1 до значения по x = 623,4
+a0  = 1,71916726862302 +/- nan
+a1  = -8,35214446952566e-05 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = 0
+R^2 = 1
+---------------------------------------------------------------------------------------
+[03.03.2022 1:10	Plot: ''График1'']
+Полиномиальный приближение по набору данных: Table1_2, используя функцию: a0+a1*x
+Ошибки погрешности Y: Неизвестный
+От значения по x = 435,8 до значения по x = 491,6
+a0  = 1,7862394265233 +/- nan
+a1  = -0,000213261648745519 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = 0
+R^2 = 1
+---------------------------------------------------------------------------------------
+[03.03.2022 1:11	Plot: ''График1'']
+Полиномиальный приближение по набору данных: Table1_2, используя функцию: a0+a1*x
+Ошибки погрешности Y: Неизвестный
+От значения по x = 623,4 до значения по x = 690,7
+a0  = 1,70785720653789 +/- nan
+a1  = -6,53789004457629e-05 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = 0
+R^2 = 1
+---------------------------------------------------------------------------------------
+[03.03.2022 1:42	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_2, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 404,7 до значения по x = 690,7
+B (y-intercept) = 1,75353419938806 +/- 0,00861835446589007
+A (slope) = -0,000139056571406609 +/- 1,56452543363154e-05
+--------------------------------------------------------------------------------------
+Chi^2 = 9,40028144983328e-05
+R^2 = 0,929410357970133
+---------------------------------------------------------------------------------------
+</log>
