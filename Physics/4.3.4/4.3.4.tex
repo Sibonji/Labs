@@ -131,5 +131,336 @@ G(u) = \int_{-\infty}^{+\infty} g(x) e^{-iux}dx.
 	\caption{Схема для определения ширины щели с помощью линзы}
 \end{figure}
 
+\section*{Ход работы}
+
+\subsection*{Определение ширины щели}
+
+\subsubsection*{Определение ширины щели с помощтю линзы}
+
+\begin{enumerate}
+
+\item Соберем установку показанную на рис. 2 и включим в сеть блок питания лазера.
+
+\item С помощью короткофокусной линзы $\text{Л}_1$ ($F = 38$ мм) получим на экране увеличенное изображение щели.
+
+\item Меняя ширину щели от 50 до 500 мкм снимем зависимость размера изображения $D_1$ от ширины цели $D$. Данные запишем в таблицу:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline 
+$D,$ мкм & 50 & 100 & 150 & 200 & 250 & 300 & 350 & 400 & 450 & 500 \\ 
+\hline 
+$D_1,$ мм & 3 & 4 & 6 & 7 & 9 & 10 & 11 & 12 & 13 & 14 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+Погрешности измерений:
+
+\[\sigma_D = 5 \: \text{мкм} \quad \sigma_{D_1} = 0,5 \text{мм}\]
+
+\item По ихмеренным данным построим график зависимость $D_1 (D)$:
+
+\begin{figure}[h!]
+	\includegraphics[width = 1.0\linewidth]{images/graph_1.png}
+	\caption{График зависимости размера изображения от ширины щели}
+\end{figure}
+
+Получим зависимость вида $y = ax + b$ - $a = 24,8 \pm 1,0$, $b = 2,07 \pm 0,30$. Следовательно:
+
+\[\text{Г} = \frac{D_1}{D} = a = 24,8 \pm 1,0\]
+
+\item Измерим расстояния $a_1$ и $b_1$:
+
+\[a_1= 40\pm 1 \: \text{мм} \quad b_1 = 1080 \pm 1 \: \text{мм}\]
+
+По ним получим:
+
+\[\text{Г} = \frac{b_1}{a_1} = 27,0 \pm 0,7\]
+
+\item Видим, что полученные значения немного отличаются, это может быть связано с неточностью определения ширины щели из-за люфта микрометра.
+
+\end{enumerate}
+
+\subsubsection*{Определение ширины цели по ее спектру}
+
+\begin{enumerate}
+
+\item Соберем схему показанную на рис. 4.
+
+\begin{figure}[h!]
+	\includegraphics[width = 1.0\linewidth]{images/6.png}
+	\caption{Схема для определения ширины щели по спектру}
+\end{figure}
+
+\item Проведем серию измерений $X(m)$, где $m$ - порядок минимума, меняя ширину щели. Запишем данные в таблицу:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline 
+$X,$ мм & 145 & 132 & 110 & 97 & 108 & 99 & 90 & 108 & 85 & 77 \\ 
+\hline 
+m & 2 & 4 & 5 & 6 & 8 & 8 & 9 & 13 & 11 & 11 \\ 
+\hline 
+$D,$ мкм & 30 & 50 & 70 & 90 & 100 & 120 & 140 & 100 & 180 & 200 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+Погрешности измерений:
+
+\[\sigma_X = 1 \: \text{мм} \quad \sigma_D = 5 \: \text{мкм} \]
+
+\item По результатам измерения спектра рассчитаем ширину щели $D_c$ (<<c>> - по спектру) используя соотношения:
+
+$\bigtriangleup X = \frac{X}{2m} = \frac{\lambda}{D_c} L,$
+
+где $\lambda = 632,8$ нм. Построим на одном листе графики $D_{\text{л}} = f(D)$ (<<л>> - по линзе) и $D_c = f(D)$:
+
+\begin{figure}[h!]
+	\includegraphics[width = 1.0\linewidth]{images/graph_3.png}
+	\caption{$D_{\text{л}} = f(D)$ и $D_c = f(D)$}
+\end{figure}
+
+\end{enumerate}
+
+\newpage
+
+\subsection*{Определение периода решеток}
+
+\subsubsection*{Определение периода по спектру на удаленном экране}
+
+\begin{enumerate}
+
+\item Поставим каасету с двумерными сетками вплотную к выходному окну лазера. Для каждой сетки измерим расстояние X, между m-ми максимумами и отметим m = порядок максимума (получившуюся картину можно наблюдать на рис. 6). Запишем полученные данные в таблицу:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+№ & 1 & 2 & 3 & 4 & 5 \\ 
+\hline 
+$m$ & 3 & 4 & 4 & 5 & 8 \\ 
+\hline 
+$X_m,$ мм & 217 & 192 & 96 & 60 & 78 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+Погрешность измерения $X_m$ составила:
+
+\[\sigma_{X_m} = 1 \: \text{мм}\]
+
+\begin{figure}[h!]
+    \centering
+	\includegraphics[width = 0.5\linewidth]{images/img_1.jpg}
+	\caption{Картина получившаяся для решетки с номером 2}
+\end{figure}
+
+\item Рассчитаем расстояния $\bigtriangleup X$ для каждой решетки между соседними максимумами и определим период каждой решетки $d_c = f(№)$ используя соотношение:
+
+\begin{equation}
+\bigtriangleup X = \frac{X}{2m} = \frac{\lambda}{d_c} L,
+\end{equation}
+
+где L - расстояние от кассеты до экрана и $L = 132,0 \pm 0,1$ см. Запишем полученнные данные в таблицу:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+№ & $\bigtriangleup X,$ мм & $\sigma_{\bigtriangleup X},$ мм & $d_c$, мкм & $\sigma_{d_c},$ мкм \\ 
+\hline 
+1 & 72,3 & 0,3 & 11,5 & 0,1 \\ 
+\hline 
+2 & 48,0 & 0,3 & 17,4 & 0,1 \\ 
+\hline 
+3 & 24,0 & 0,3 & 34,8 & 0,4\\ 
+\hline 
+4 & 12,0 & 0,2 & 69,6 & 1,2\\ 
+\hline 
+5 & 9,8 & 0,1 & 85,7 & 1,1 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+\end{enumerate}
+
+\subsubsection*{Определение периода решеток по увеличенному изображению спектра}
+
+\begin{enumerate}
+
+\item Соберем схему показанную на рис. 7. Линзу $\text{Л}_2$ с максимальным фокусом ($F_2 \simeq 10$ см) поставим на расстоянии $\simeq F_2$ от кассеты. В плоскости Ф линза $\text{Л}_2$ дает фрье-образ сетки - её спектр, а короткофокусная длинза $\text{Л}_3$ ($F_3 \simeq 2,5$ см) создаёт на экране увеличенное изображение этого спектра.
+
+\begin{figure}[h!]
+    \centering
+	\includegraphics[width = 0.8\linewidth]{images/7.png}
+	\caption{Схема определения периода решетки по увеличенному изображению спектра}
+\end{figure}
+
+\item Измерим X и m для всех сеток, где это возможно. Запишем данные в таблицу:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+№ & 2 & 3 & 4 & 5 \\ 
+\hline 
+$m$ & 1 & 2 & 4 & 5 \\ 
+\hline 
+$X_m,$ мм  & 192 & 190 & 192 & 178 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+Погрешность измерения $X_m$ составила:
+
+\[\sigma_{X_m} = 1 \: \text{мм}\]
+
+\item Запишем чему равно $a_3$, $b_3$, $F_2$ и $F_3$:
+
+\[F_2 = 110 \: \text{мм} \quad F_3 = 25 \: \text{мм}\]
+
+\[a_3 = 25 \pm 1 \: \text{мм} \quad b_3 = 1080 \: \text{мм}\]
+
+\item Зная увеличение линзы $\text{Л}_3$ ($\text{Г}_3 = b_3 / a_3$), можно расссчитать расстояние между максимумами $\bigtriangleup x$ в плоскости Ф, а затем период сетки $d_{\text{л}}$ по формуле:
+
+\begin{equation}
+\bigtriangleup x = \frac{\bigtriangleup X}{\text{Г}_3} = \frac{\lambda}{d_{\text{л}}} F_2
+\end{equation}
+
+\item Рассчитаем нужные значения и запишем их в таблицу:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+№ & $\bigtriangleup x,$ мм & $\sigma_{\bigtriangleup x},$ мм & $d_{\text{л}},$ мкм & $\sigma_{d_{\text{л}}},$ мкм \\ 
+\hline 
+2 & 4,44 & 0,18 & 15,7 & 0,6 \\ 
+\hline 
+3 & 2,20 & 0,09 & 31,7 & 1,3 \\ 
+\hline 
+4 & 1,11 & 0,04 & 62,6 & 2,5 \\ 
+\hline 
+5 & 0,82 & 0,03 & 84,5 & 3,4 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+\end{enumerate}
+
+\subsection*{Мультиплицирование}
+
+\begin{enumerate}
+
+\item Снова поставим тубус со щелью к окну лазера (рис. 8) и найдем на экране резкое изображение щели с помощью линзы $\text{Л}_2$ ($F_2 = 110,$ мм). В фокальной плоскости линзы поставим кассету с сетками.
+
+\begin{figure}[h!]
+    \centering
+	\includegraphics[width = 0.8\linewidth]{images/8.png}
+	\caption{Схема для наблюдения мультиплицирования}
+\end{figure}
+
+\item Подберем такую ширину входной щели $D$, чтобы на экране можно было наблюдать мультиплицированное изображение для всех сеток ($D = 80 \pm 5,$ мкм). Измерим расстояния $a_2$ и $b_2$:
+
+\[a_2 = 140 \pm 1 \: \text{мм} \quad b_2 = 1100 \pm 1 \: \text{мм}\]
+
+\item Снимем зависимость $Y$ (расстояние между удаленными изображениями щели) и $K$ (число промежутков между изображениями) от № (номера сетки):
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+№ & 1 & 2 & 3 & 4 & 5 \\ 
+\hline 
+$Y,$ мм & 171 & 151 & 71 & 65 & 50 \\ 
+\hline 
+$K$ & 3 & 4 & 4 & 7 & 7 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+\item Рассчитаем периоды <<фиктивных>> решёток. которые дали бы такую же периодичность на экране: $\bigtriangleup y = \bigtriangleup Y / \text{Г}_2$, где $\bigtriangleup Y = Y/K$. Также рассчитаем $d_c$ - периоды решёток, определенных по спектру. Зависимость должна быть линейной, поскольку:
+
+\[\frac{\lambda}{\bigtriangleup y} F_2 = d_c\]
+
+Запишем результаты расчетов в таблицу:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+№ & $\bigtriangleup y$, мм & $\sigma_{\bigtriangleup y},$ мм & $1/d_c,$ 1/мкм & $\sigma_{1/d_c},$ 1/мкм \\ 
+\hline 
+1 & 7,25 & 0,05 & 0,0866 & 0,0004 \\ 
+\hline 
+2 & 4,80 & 0,03 & 0,0575 & 0,0003 \\ 
+\hline 
+3 & 2,26 & 0,02 & 0,0287 & 0,0003 \\ 
+\hline 
+4 & 1,18 & 0,01 & 0,0144 & 0,0002 \\ 
+\hline 
+5 & 0,91 & 0,01 & 0,0117 & 0,0001 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+\item Построим график зависимости $\bigtriangleup y = f(1/d_c)$.
+
+\begin{figure}[h!]
+    \centering
+	\includegraphics[width = 0.8\linewidth]{images/graph_4.png}
+	\caption{График зависимости $\bigtriangleup y = f(1/d_c)$}
+\end{figure}
+
+Зависимость имеет вид $y = ax + b$, где:
+
+\[a = (85,2 \pm 0,2) \cdot 10^3 \: \text{мкм}^2 \quad b = -0,117 \pm 0,017 \: \text{мм}\]
+
+\end{enumerate}
+
+\subsection*{Влияние щелевой диафрагмы на изображение сетки}
+
+\begin{enumerate}
+
+\item Вертикальная и горизонтальная щели. 1 спектр - картина не разрешается, 2 и более, картина разрешается.
+
+\begin{figure}[h!]
+        \begin{center}
+            \begin{minipage}[h!]{0.48\linewidth}
+                \includegraphics[width=1\linewidth]{images/img_3.jpg}
+                \caption{Изображение щели на экране}
+                \label{picture_2}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[h!]{0.48\linewidth}
+                \includegraphics[width=1\linewidth]{images/img_2.jpg}
+                \caption{Увеличенное изображение спектра}
+                \label{picture_3}
+            \end{minipage}
+        \end{center}
+    \end{figure}
+    
+    \begin{figure}[h!]
+        \begin{center}
+            \begin{minipage}[h!]{0.48\linewidth}
+                \includegraphics[width=1\linewidth]{images/img_5.jpg}
+                \caption{Изображение узкой щели на экране}
+                \label{picture_2}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[h!]{0.48\linewidth}
+                \includegraphics[width=1\linewidth]{images/img_4.jpg}
+                \caption{Увеличенное изображение спектра для узкой щели}
+                \label{picture_3}
+            \end{minipage}
+        \end{center}
+    \end{figure}
+
+\item Щель под углом в $45^{\circ}$. 2 спектра - картина не разрешается,3 и более разрешается.
+
+\end{enumerate}
+
+\section*{Вывод}
+
+Мы научились исследовать параметры паттернов через порождающие дифракционные
+картины с помощью разложения в ряд фурье. В частности мы происследовали поведение
+щели и двумерных решеток. В экспериментах мы получили различные числовые значения, подтверждающие друг друга.
+
 
 \end{document}
