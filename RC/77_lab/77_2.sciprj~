@@ -1,0 +1,87 @@
+SciDAVis 2.3.0 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+3576
+<table creation_time="2022-29-10 09:20:14:950" caption_spec="%n%C{ - }%c" name="Table1" columns="2" rows="30"><comment><![CDATA[]]></comment><column creation_time="2022-29-10 09:20:14:950" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2022-29-10 09:31:23:478" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2022-29-10 09:31:23:479" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">6.6946790000000006e-02</row><row type="TypeDouble" index="2" invalid="no">1.2493873699999999e-01</row><row type="TypeDouble" index="3" invalid="no">2.2184875000000001e-01</row><row type="TypeDouble" index="4" invalid="no">3.3579210199999998e-01</row><row type="TypeDouble" index="5" invalid="no">3.9794000899999998e-01</row><row type="TypeDouble" index="6" invalid="no">4.7712125500000002e-01</row><row type="TypeDouble" index="7" invalid="no">5.6427143000000002e-01</row><row type="TypeDouble" index="8" invalid="no">6.3682209800000000e-01</row><row type="TypeDouble" index="9" invalid="no">7.2699872799999998e-01</row><row type="TypeDouble" index="10" invalid="no">7.7815124999999996e-01</row><row type="TypeDouble" index="11" invalid="no">8.2390874100000000e-01</row><row type="TypeDouble" index="12" invalid="no">8.7506126299999998e-01</row><row type="TypeDouble" index="13" invalid="no">9.2081875400000002e-01</row></column><column creation_time="2022-29-10 09:20:14:958" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2022-29-10 09:29:45:082" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2022-29-10 09:29:45:082" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.1364034480000001e+01</row><row type="TypeDouble" index="1" invalid="no">7.9588001730000002e+00</row><row type="TypeDouble" index="2" invalid="no">4.6089784280000003e+00</row><row type="TypeDouble" index="3" invalid="no">-6.3034102900000000e-01</row><row type="TypeDouble" index="4" invalid="no">-5.8485964780000002e+00</row><row type="TypeDouble" index="5" invalid="no">-8.7541427110000001e+00</row><row type="TypeDouble" index="6" invalid="no">-1.2216678310000001e+01</row><row type="TypeDouble" index="7" invalid="no">-1.5917600350000001e+01</row><row type="TypeDouble" index="8" invalid="no">-1.9172146300000001e+01</row><row type="TypeDouble" index="9" invalid="no">-2.3098039199999999e+01</row><row type="TypeDouble" index="10" invalid="no">-2.4731440129999999e+01</row><row type="TypeDouble" index="11" invalid="no">-2.7850899540000000e+01</row><row type="TypeDouble" index="12" invalid="no">-2.9499103860000002e+01</row><row type="TypeDouble" index="13" invalid="no">-3.2041199829999996e+01</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width></table>
+geometry	0	0	759	860	
+
+</table>
+<multiLayer>
+График1	1	1	29.10.2022 9:29
+geometry	759	0	941	609	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	413	238
+Alignement	0	0
+<graph>
+ggeometry	9	8	905	517
+PlotTitle	 	#ff000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffffff	255
+Margin	0
+Border	0	#ff000000
+grid	0	0	0	0	#ff0000ff	0	0	#ffa0a0a4	2	0	#ff0000ff	0	0	#ffa0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	log<sub>10</sub>(f/f<sub>0</sub>)	20log<sub>10</sub>(U<sub>out</sub>/U<sub>in</sub>), Дб			
+AxesTitleColors	#ff000000	#ff000000	#ff000000	#ff000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	MS Shell Dlg 2	16	75	0	0	0
+ScaleFont0	MS Shell Dlg 2	13	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	13	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	13	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	13	75	0	0	0
+AxisFont0	MS Shell Dlg 2	13	50	0	0	0
+AxisFont1	MS Shell Dlg 2	13	50	0	0	0
+AxisFont2	MS Shell Dlg 2	13	50	0	0	0
+AxisFont3	MS Shell Dlg 2	13	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesNumberColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffffff	255
+curve	Table1_1	Table1_2	1	0	#ff000000	0	1	7	1	#ff000000	#ff000000	0	#ff000000	14	1	0	64		2	0	0	29	1
+FunctionCurve	0,LinearПриближение1,x,0,0.920818754	2			0	1	#ffff0000	0	1	0	0	#ff000000	#ffa0a0a4	0	#ff000000	14	1	16	64		2	0	126045000	-64	1
+<formula>
+B=10.3531721917438
+A=-46.1502412206949
+
+A*x+B
+</formula>
+scale	0	-40	20	0	8	5	0	0
+scale	1	-40	20	0	8	5	0	0
+scale	2	-0.05	1	0	7	5	0	0
+scale	3	-0.05	1	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+</multiLayer>
+<log>
+[29.10.2022 9:30	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_2, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 0 до значения по x = 3,058893689
+B (y-intercept) = 10,3531721728926 +/- 0,315864900177444
+A (slope) = -13,8926069061036 +/- 0,163784263800887
+--------------------------------------------------------------------------------------
+Chi^2 = 4,50331220061008
+R^2 = 0,998334922851926
+---------------------------------------------------------------------------------------
+[29.10.2022 9:31	Plot: ''График1'']
+Линейная регрессия приближение по набору данных: Table1_2, используя функцию: A*x+B
+Ошибки погрешности Y: Неизвестный
+От значения по x = 0 до значения по x = 0,920818754
+B (y-intercept) = 10,3531721917438 +/- 0,315864896874537
+A (slope) = -46,1502412206949 +/- 0,544079541732343
+--------------------------------------------------------------------------------------
+Chi^2 = 4,50331210113246
+R^2 = 0,998334922888707
+---------------------------------------------------------------------------------------
+</log>
