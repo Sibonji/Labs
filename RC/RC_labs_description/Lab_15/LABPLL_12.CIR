@@ -357,7 +357,7 @@ Height=-14
 
 [Attr]
 ON=-3,11,Param:SCALE
-V=200
+V=500
 Style=8192
 Height=-14
 
@@ -724,8 +724,8 @@ Style=8192
 Height=-14
 
 [Attr]
-ON=-27,-25,RESISTANCE
-V=0k
+ON=-37,-25,RESISTANCE
+V=10.2k
 Style=8192
 Height=-14
 
@@ -767,7 +767,7 @@ Height=-14
 
 [Attr]
 ON=4,-20,CAPACITANCE
-V=0pF
+V=1pF
 Style=8192
 Height=-14
 
@@ -834,8 +834,8 @@ V=dph
 Style=8192
 
 [Attr]
-ON=-12,3,VALUE
-V=0
+ON=-13,3,VALUE
+V=0.25
 Style=8192
 
 [Comp]
@@ -1137,7 +1137,7 @@ Height=-14
 
 [Attr]
 ON=18,-39,VALUE
-V=v(vco)*0e2
+V=v(vco)*1.5e2
 Height=-14
 
 [Attr]
@@ -1593,7 +1593,7 @@ ALIGNBOTTOM=Yes
 
 [Section]
 Index=0
-Name="LABPLL"
+Name="LABPLL_12"
 Type=Main
 Enable=True
 CurrentPage 0=0
@@ -1617,7 +1617,7 @@ Scale 0=1
 Scale 1=1
 Scale 2=1
 Scale 3=0.66666666666666663
-Px=529,150
+Px=564,208
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -2453,11 +2453,11 @@ Plt=1
 AliasID=1
 XExp=T
 YExp=v(pd)
-XRng=5m,0
-YRng=300,-300
+XRng=0.005
+YRng=300,-75
 Options=LINEARX,LINEARY
-Range Grid X=1m
-Range Grid Y=150
+Range Grid X=0.001
+Range Grid Y=75
 Enable=Enable
 Line Color=#D2004F
 Text Color=#D2004F
@@ -2480,10 +2480,10 @@ AliasID=3
 XExp=T
 YExp=v(vco)
 XRng=15m,0
-YRng=160,-240
+YRng=48,-32
 Options=LINEARX,LINEARY
 Range Grid X=1m
-Range Grid Y=80
+Range Grid Y=16
 Enable=Enable
 DPS=Open Bubbles
 Line Color=#006200
@@ -2507,10 +2507,10 @@ AliasID=2
 XExp=T
 YExp=v(ph)+v(dph)-v(phl)
 XRng=5m,0
-YRng=7.5
+YRng=0.04
 Options=LINEARX,LINEARY
 Range Grid X=1m
-Range Grid Y=1.5
+Range Grid Y=0.008
 Enable=Enable
 DPS=Open Bubbles
 Line Color=#6363FF
@@ -2714,11 +2714,42 @@ Analysis=Transient
 Index=1
 Status=On
 Parameter Type=Component
-Name=DF
-Param=dc.value
-From=-0.1
-To=2
-Value=500m
+Name=CD
+Param=value
+From=100p
+To=1000p
+Value=100p
+
+[Optimize]
+Analysis=Transient
+Format=3
+ThatCnt=10
+POWELL_TOL=1e-4
+POWELL_RelPercentTol=.1
+POWELL_PercentTol=1m
+HOOKE_TOL=1e-4
+HOOKE_PercentTol=1m
+HOOKE_RHO=.3
+HOOKE_EPSILON=1e-9
+HOOKE_ITERMAX=1000
+DE_MAXITER=200
+DE_IPRINT=50
+DE_PCROS=.9
+DE_FACT=.5
+DE_MULTIPLIER=5
+InitialRangeFactor=2
+InitializeEach=False
+Method=Powell
+Method=Hooke
+Method=LM
+Method=DE
+Update_Plot=False
+Minimize_Plot=False
+StartWith=Existing
+GridSize=4
+NumberOfTrys=10
+Log=False
+Show Log=False
 
 [Watch]
 Analysis=Transient
